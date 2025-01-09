@@ -1,13 +1,13 @@
 # /!\ IMPORTANT À LIRE /!\
 # QCM-Maintenance
 ### Comment ça fonctionne 
-*J'ai fait un QCM pour navigateur web pour le cours de maintenance.
-4 Réponses 1 seule bonne.
-Quand tu cliques sur la bonne elle s'éclaire en vert sinon elle s'éclaire en rouge et éclair en vert la correcte.
-Les questions et les réponses ne sont pas chaque fois dans le même ordre. 
-Votre nombre de bonne et mauvaise réponses s'affiche dans la console du navigateur pour l'ouvrir suffit d'appuyer sur `Ctrl` +`Alt` +`J`
-Pour relancer le quiz il faut rafraichir la page.
-Si vous voulez alimenter le questionnaire ou faire d'autres fichier JSON pour d'autre matière hésité pas le repository est ouvert ;)
+* J'ai fait un QCM pour navigateur web pour le cours de maintenance.
+* 4 Réponses 1 seule bonne.
+* Quand tu cliques sur la bonne elle s'éclaire en vert sinon elle s'éclaire en rouge et éclair en vert la correcte.
+* Les questions et les réponses ne sont pas chaque fois dans le même ordre. 
+* Votre nombre de bonne et mauvaise réponses s'affiche dans la console du navigateur pour l'ouvrir suffit d'appuyer sur `Ctrl` +`Alt` +`J`
+* Pour relancer le quiz il faut rafraichir la page.
+
 
 ## Comment l'installer sur ton ordi et l'utiliser
 1) Assure toi d'avoir python sur ton ordinateur _Pour ça va dans ton terminal et tape `python -v`_
