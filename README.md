@@ -1,7 +1,15 @@
-# /!\ IMPORTANT /!\
+# /!\ IMPORTANT À LIRE /!\
 # QCM-Maintenance
-J'ai fait un QCM pour navigateur web pour le cours de maintenance 
-## comment l'installer sur ton ordi et l'utiliser
+### Comment ça fonctionne 
+J'ai fait un QCM pour navigateur web pour le cours de maintenance.
+4 Réponses 1 seule bonne.
+Quand tu cliques sur la bonne elle s'éclaire en vert sinon elle s'éclaire en rouge et éclair en vert la correcte.
+Les questions et les réponses ne sont pas chaque fois dans le même ordre. 
+Votre nombre de bonne et mauvaise réponses s'affiche dans la console du navigateur pour l'ouvrir suffit d'appuyer sur `Ctrl` +`Alt` +`J`
+Pour relancer le quiz il faut rafraichir la page.
+Si vous voulez alimenter le questionnaire ou faire d'autres fichier JSON pour d'autre matière hésité pas le repository est ouvert ;)
+
+## Comment l'installer sur ton ordi et l'utiliser
 1) Assure toi d'avoir python sur ton ordinateur
 2) Crée un dossier maintenance sur ton bureau
 3) Télécharge les 2 fichiers et mets les dans le dossier maintenance sur ton bureau
@@ -14,6 +22,19 @@ J'ai fait un QCM pour navigateur web pour le cours de maintenance
 
 
 ## Ajouter des questions 
+Dans le fichier question.json, ajouter ce code entre deux question
+ `{
+                "question": "Question",
+                "options": ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
+                "answer": "Bonne réponse"
+ }, `
 
-
+ 
 ## Modifier des questions
+Prendre la question dans le fichier question.json 
+modifier les réponses possibles dans otpions ou modifier la bonne réponse dans answer
+ `{
+                "question": "Question",
+                "options": ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
+                "answer": "Bonne réponse"
+ }, `
