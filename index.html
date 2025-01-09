@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM SPC, TPM, Lean et SMED en maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .question-container {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option {
+            margin-bottom: 5px;
+            padding: 8px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .option:hover {
+            background-color: #d3d3d3;
+        }
+        .option.correct {
+            background-color: #90ee90; /* Vert clair */
+        }
+        .option.incorrect {
+            background-color: #ffcccb; /* Rouge clair */
+        }
+        .option.disabled {
+            cursor: not-allowed;
+            background-color: #e0e0e0 !important; /* Grisé */
+        }
+        .answer {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+        .section-title {
+            margin-top: 40px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>QCM maintenance</h1>
+
+    <div id="qcm-container"></div>
+
+    <script>
+        bonne=0;
+        fausse=0;
+        // Fonction pour charger le fichier JSON
+        async function loadJSON() {
+            try {
+                const response = await fetch('question.json');  // Remplace par l'URL du fichier JSON
+                const data = await response.json();
+                displayQCM(data);
+            } catch (error) {
+                console.error('Erreur lors du chargement du fichier JSON:', error);
+            }
+        }
+
+        // Fonction pour mélanger les éléments d'un tableau
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // Échange les éléments
+            }
+        }
+
+        // Fonction pour créer une section de questions
+        function createQuestionSection(title, questions) {
+            const section = document.createElement('div');
+            const sectionTitle = document.createElement('h2');
+            sectionTitle.textContent = title;
+            section.appendChild(sectionTitle);
+
+            questions.forEach(q => {
+                const questionContainer = document.createElement('div');
+                questionContainer.classList.add('question-container');
+
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question');
+                questionElement.textContent = q.question;
+                questionContainer.appendChild(questionElement);
+
+                // Mélanger les options avant de les afficher
+                shuffleArray(q.options);
+                const optionsElement = document.createElement('div');
+                optionsElement.classList.add('options');
+
+                q.options.forEach(option => {
+                    const optionElement = document.createElement('div');
+                    optionElement.classList.add('option');
+                    optionElement.textContent = option;
+
+                    // Ajout de l'écouteur d'événements
+                    optionElement.addEventListener('click', () => showAnswer(optionElement, q.answer, option, optionsElement));
+                    optionsElement.appendChild(optionElement);
+                });
+
+                questionContainer.appendChild(optionsElement);
+                section.appendChild(questionContainer);
+            });
+
+            return section;
+        }
+
+        // Fonction pour afficher la réponse après un clic
+        function showAnswer(optionElement, correctAnswer, selectedOption, optionsElement) {
+            const options = optionsElement.children;
+            // Coloration des réponses
+            if (selectedOption === correctAnswer) {
+                optionElement.classList.add('correct'); // Bonne réponse
+                bonne=bonne+1
+            } else {
+                optionElement.classList.add('incorrect'); // Mauvaise réponse
+                for (let opt of options) {
+                    if (opt.textContent === correctAnswer) {
+                        fausse=fausse+1
+                        opt.classList.add('correct'); // Met en vert la bonne réponse
+                    }
+                }
+            }
+            console.log("Bonne réponses "+bonne+" mauvaises réponses "+fausse);
+
+        }
+
+        // Fonction pour afficher le QCM depuis le fichier JSON
+        function displayQCM(qcmData) {
+            const container = document.getElementById('qcm-container');
+
+            // Parcours les sections et questions du JSON
+            for (const section in qcmData) {
+                for (const title in qcmData[section]) {
+                    // Mélanger les questions avant de créer une section
+                    shuffleArray(qcmData[section][title]);
+
+                    const sectionElement = createQuestionSection(title, qcmData[section][title]);
+                    container.appendChild(sectionElement);
+                }
+            }
+        }
+
+        // Charger les données JSON à l'ouverture de la page
+        loadJSON();
+    </script>
+</body>
+</html>
