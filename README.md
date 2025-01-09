@@ -12,7 +12,7 @@
 ## Comment l'installer sur ton ordi et l'utiliser
 1) Assure toi d'avoir python sur ton ordinateur _Pour ça va dans ton terminal et tape `python -v`_
 2) Crée un dossier maintenance sur ton bureau
-3) Télécharge les 2 fichiers et mets les dans le dossier maintenance sur ton bureau
+3) Télécharge les 2 fichiers `index.html` et `question.json` et mets les dans le dossier maintenance sur ton bureau
 4) Ouvre un terminal windows
 5)  Déplace toi avec la commande `cd desktop\maintenance `  dans le terminal 
    Tu devrais voir un truc du style `C:\Users\gregoire\desktop\maintenance>` 
