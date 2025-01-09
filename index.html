@@ -140,7 +140,12 @@
                     }
                 }
             }
-            console.log("Bonne réponses "+bonne+" mauvaises réponses "+fausse);
+            console.log("Bonne réponses "+bonne  +"\nMauvaises réponses "+fausse);
+            if (bonne >0){
+                total=bonne+fausse
+                rend = bonne/total
+                console.log("\nRatio : " +rend)
+            }
 
         }
 
