@@ -46,4 +46,5 @@ modifier les réponses possibles dans otpions ou modifier la bonne réponse dans
  3) Modifier les questions pour les sujets que l'on veut
  4) Aller dans index.html et modifier  const response = await fetch('question.json');  // Remplace par l'URL du fichier JSON par le nom du nouveaux fichier
 
-
+### Astuce
+Si tu veux créer facilement des listes de question demande à Chat de te faire des QCM et de te les fournir en format JSON.
