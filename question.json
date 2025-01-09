@@ -1,0 +1,967 @@
+{
+    "QCM": {
+        "Qestion sur la maintenance SMED, TMP et lean": [
+            {
+                "question": "Quand les premières théories sur le SPC ont-elles été développées ?",
+                "options": ["1920", "1931", "1950", "1980"],
+                "answer": "1931"
+            },
+            {
+                "question": "Quelle industrie a massivement adopté le SPC dans les années 1980 ?",
+                "options": ["L’industrie textile", "L’industrie automobile américaine", "L’industrie aéronautique", "L’industrie électronique"],
+                "answer": "L’industrie automobile américaine"
+            },
+            {
+                "question": "Quels sont les trois piliers du SPC ?",
+                "options": ["Statistique, Production, Calcul", "Statistique, Processus, Maîtrise", "Sécurité, Productivité, Contrôle", "Standardisation, Processus, Calcul"],
+                "answer": "Statistique, Processus, Maîtrise"
+            },
+            {
+                "question": "Quelle est la principale utilisation d’une carte Xm-R en SPC ?",
+                "options": ["Identifier les causes de panne", "Contrôler la moyenne et l’étendue d’un processus", "Optimiser la cadence de production", "Mesurer le rendement global d’un processus"],
+                "answer": "Contrôler la moyenne et l’étendue d’un processus"
+            },
+            {
+                "question": "Qui a introduit les premières bases théoriques du SPC ?",
+                "options": ["W. Edwards Deming", "Walter A. Shewhart", "Taiichi Ohno", "Henry Ford"],
+                "answer": "Walter A. Shewhart"
+            },
+            {
+                "question": "Dans quel contexte le SPC a-t-il été appliqué intensivement dans les années 1970 ?",
+                "options": ["La production textile en Europe", "L’industrie automobile américaine", "La construction navale japonaise", "L’industrie électronique américaine"],
+                "answer": "L’industrie automobile américaine"
+            },
+            {
+                "question": "Que signifie « SPC » ?",
+                "options": ["Statistical Process Control", "Systematic Process Control", "Statistical Product Control", "Statistical Planning and Control"],
+                "answer": "Statistical Process Control"
+            },
+            {
+                "question": "L’objectif principal du SPC est :",
+                "options": ["Réduire les coûts de production", "Maîtriser la qualité en contrôlant les variations du processus", "Standardiser les interventions de maintenance", "Augmenter la cadence de production"],
+                "answer": "Maîtriser la qualité en contrôlant les variations du processus"
+            },
+            {
+                "question": "Dans une population normale, quelle est la probabilité qu’une valeur se trouve à ±3σ de la moyenne ?",
+                "options": ["68 %", "95,4 %", "99,73 %", "100 %"],
+                "answer": "99,73 %"
+            },
+            {
+                "question": "Si la moyenne d’un processus est 10 et que son écart-type est 0,5, quelle est la plage couverte par ±3σ ?",
+                "options": ["[9,5 ; 10,5]", "[8,5 ; 11,5]", "[7 ; 13]", "[8 ; 12]"],
+                "answer": "[8,5 ; 11,5]"
+            },
+            {
+                "question": "Que représente le coefficient Cm dans la capabilité machine ?",
+                "options": ["La précision de l’instrument de mesure", "La capacité à produire des pièces conformes dans les limites de tolérance", "Le temps moyen entre deux pannes", "La qualité des matériaux utilisés"],
+                "answer": "La capacité à produire des pièces conformes dans les limites de tolérance"
+            },
+            {
+                "question": "Quel niveau de Cm est considéré comme acceptable dans l’industrie ?",
+                "options": ["Cm ≥ 1,00", "Cm ≥ 1,33", "Cm ≥ 1,50", "Cm ≥ 1,67"],
+                "answer": "Cm ≥ 1,67"
+            },
+            {
+                "question": "Que représente le « Xm » dans une carte Xm-R ?",
+                "options": ["La médiane des mesures", "La moyenne des mesures", "L’écart maximal des mesures", "Le total des mesures effectuées"],
+                "answer": "La moyenne des mesures"
+            },
+            {
+                "question": "Les limites de contrôle (LSC et LIC) sur une carte Xm-R sont définies en fonction de :",
+                "options": ["Les tolérances spécifiées", "La variabilité naturelle du processus", "Les exigences du client", "La durée des cycles de production"],
+                "answer": "La variabilité naturelle du processus"
+            },
+            {
+                "question": "Que signifie un point hors des limites de contrôle sur une carte Xm-R ?",
+                "options": ["Une variation normale du processus", "Une cause spéciale affectant le processus", "Une erreur de mesure systématique", "Une défaillance critique de la machine"],
+                "answer": "Une cause spéciale affectant le processus"
+            },
+      
+            {
+                "question": "Quel est l’objectif principal de la TPM ?",
+                "options": ["Réduire les coûts de production uniquement", "Augmenter l’efficacité globale des équipements (OEE)", "Automatiser tous les processus de maintenance", "Centraliser la gestion des pannes"],
+                "answer": "Augmenter l’efficacité globale des équipements (OEE)"
+            },
+            {
+                "question": "Quels sont les trois composants du TRS ?",
+                "options": ["Qualité, Vitesse, Disponibilité", "Disponibilité, Performance, Rendement qualité", "Maintenance, Production, Qualité", "Temps, Production, Défauts"],
+                "answer": "Disponibilité, Performance, Rendement qualité"
+            },
+            {
+                "question": "La TPM vise à :",
+                "options": ["Automatiser toutes les interventions de maintenance", "Réduire les temps d’arrêt et améliorer la productivité des équipements", "Remplacer les opérateurs par des machines intelligentes", "Réduire les coûts de main-d’œuvre"],
+                "answer": "Réduire les temps d’arrêt et améliorer la productivité des équipements"
+            },
+            {
+                "question": "Quels sont les trois facteurs intégrés dans l’OEE (Efficacité Globale des Équipements) ?",
+                "options": ["Maintenance, Production, Qualité", "Disponibilité, Performance, Qualité", "Durabilité, Rendement, Coût", "Cycle, Cadence, Disponibilité"],
+                "answer": "Disponibilité, Performance, Qualité"
+            },
+            {
+                "question": "Quel pilier de la TPM encourage les opérateurs à effectuer eux-mêmes les tâches simples de maintenance ?",
+                "options": ["Maintenance planifiée", "Maintenance autonome", "Gestion des nouveaux équipements", "Gestion de la qualité"],
+                "answer": "Maintenance autonome"
+            },
+            {
+                "question": "Le pilier « Gestion de la Qualité » vise principalement à :",
+                "options": ["Réduire les coûts liés à la maintenance corrective", "Ajuster et maintenir les conditions pour atteindre le zéro défaut", "Accélérer le démarrage des nouveaux équipements", "Former les opérateurs à la maintenance préventive"],
+                "answer": "Ajuster et maintenir les conditions pour atteindre le zéro défaut"
+            },
+            {
+                "question": "Le TRS (Taux de Rendement Synthétique) est égal à :",
+                "options": ["Disponibilité x Performance x Qualité", "Temps d’ouverture x Disponibilité x Qualité", "Temps d’utilisation x Nombre de pièces produites conformes", "Taux de performance x Rendement qualité x Temps utile"],
+                "answer": "Disponibilité x Performance x Qualité"
+            },
+            {
+                "question": "Si une machine a une disponibilité de 90 %, une performance de 85 % et un rendement qualité de 95 %, quel est son TRS ?",
+                "options": ["70 %", "72,675 %", "76,5 %", "81 %"],
+                "answer": "72,675 %"
+            },
+            {
+                "question": "Parmi les bénéfices suivants, lequel est directement lié à la TPM ?",
+                "options": ["Réduction des stocks de matières premières", "Augmentation de l’autonomie des opérateurs", "Standardisation complète des processus", "Réduction des coûts d’emballage"],
+                "answer": "Augmentation de l’autonomie des opérateurs"
+            },
+            {
+                "question": "Quelles sont les étapes essentielles pour mettre en place un programme de TPM efficace ?",
+                "options": ["Communication, planification, suivi des performances", "Automatisation, contrôle, externalisation", "Analyse des pannes, gestion de l’énergie, réduction des coûts", "Standardisation, réglage automatique, optimisation des flux"],
+                "answer": "Communication, planification, suivi des performances"
+            },
+            {
+                "question": "Quel pilier de la TPM vise spécifiquement à réduire l’impact environnemental des opérations ?",
+                "options": ["Gestion de la sécurité et de l’environnement", "Maintenance planifiée", "Gestion des nouveaux équipements", "Amélioration continue"],
+                "answer": "Gestion de la sécurité et de l’environnement"
+            },
+            {
+                "question": "Quel est l'objectif principal de la maîtrise statistique des processus (SPC) ?",
+                "options": [
+                    "Réduire le besoin de prélèvements en production",
+                    "Maintenir les moyennes et étendues des processus sous contrôle",
+                    "Augmenter les tolérances des machines",
+                    "Éviter l'utilisation de tout type de statistiques"
+                ],
+                "answer": "Maintenir les moyennes et étendues des processus sous contrôle"
+            },
+            {
+                "question": "Que représente le coefficient Cpk dans le SPC ?",
+                "options": [
+                    "La tolérance moyenne d'une machine",
+                    "La capacité d'un opérateur à travailler avec précision",
+                    "Le centrage et la dispersion du processus par rapport aux tolérances",
+                    "Le coût total de production d'un processus"
+                ],
+                "answer": "Le centrage et la dispersion du processus par rapport aux tolérances"
+            },
+            {
+                "question": "Le TRS (Taux de Rendement Synthétique) est composé de :",
+                "options": [
+                    "Disponibilité, performance et qualité",
+                    "Disponibilité, prix et coût",
+                    "Performance, prix et fiabilité",
+                    "Qualité, coûts et vitesse"
+                ],
+                "answer": "Disponibilité, performance et qualité"
+            },
+            {
+                "question": "Quelle est l'une des 7 étapes de la Maintenance Autonome dans la TPM ?",
+                "options": [
+                    "Éliminer les inspections régulières",
+                    "Former les opérateurs à inspecter les conditions de leur équipement",
+                    "Réparer les machines uniquement après une panne critique",
+                    "Remplacer tous les équipements chaque année"
+                ],
+                "answer": "Former les opérateurs à inspecter les conditions de leur équipement"
+            },
+            {
+                "question": "Quel est l'objectif principal du Lean ?",
+                "options": [
+                    "Produire en grande quantité sans tenir compte de la demande",
+                    "Réduire les coûts tout en maximisant les stocks",
+                    "Produire ce que le client veut, au moment où il le demande, avec le coût le plus bas",
+                    "Augmenter la complexité des processus"
+                ],
+                "answer": "Produire ce que le client veut, au moment où il le demande, avec le coût le plus bas"
+            },
+            {
+                "question": "Quel est l’un des principaux bénéfices du Lean ?",
+                "options": [
+                    "Augmentation des rebuts",
+                    "Réduction des délais",
+                    "Complexification des processus",
+                    "Augmentation des stocks inutiles"
+                ],
+                "answer": "Réduction des délais"
+            },
+            {
+                "question": "Que signifie 'Muda' dans le contexte du Lean ?",
+                "options": [
+                    "Une tâche excessive et impossible à accomplir",
+                    "Une activité sans valeur ajoutée mais acceptée",
+                    "Une irrégularité ou fluctuation",
+                    "Un processus parfaitement optimisé"
+                ],
+                "answer": "Une activité sans valeur ajoutée mais acceptée"
+            },
+            {
+                "question": "Parmi les principes du modèle Toyota, lequel met l'accent sur la qualité dès le premier coup ?",
+                "options": [
+                    "Standardisation des tâches",
+                    "Culture de résolution immédiate des problèmes (jidoka)",
+                    "Utilisation de technologies avancées coûteuses",
+                    "Centralisation des processus décisionnels"
+                ],
+                "answer": "Culture de résolution immédiate des problèmes (jidoka)"
+            },
+            {
+                "question": "Quelle méthode Lean vise à éliminer les gaspillages liés à la surproduction ?",
+                "options": [
+                    "Juste-à-temps (JIT)",
+                    "Kaizen",
+                    "Kanban",
+                    "5S"
+                ],
+                "answer": "Juste-à-temps (JIT)"
+            },
+            {
+                "question": "Quel est le principal indicateur de performance dans le Lean ?",
+                "options": [
+                    "Temps d’écoulement (Lead Time)",
+                    "Taux de rendement synthétique (TRS)",
+                    "Nombre d’employés formés",
+                    "Quantité totale produite"
+                ],
+                "answer": "Temps d’écoulement (Lead Time)"
+            },
+            {
+                "question": "Dans la TPM, que mesure le TRS (Taux de Rendement Synthétique) ?",
+                "options": [
+                    "Le coût total de maintenance",
+                    "La qualité des matériaux",
+                    "La performance globale d’un équipement",
+                    "Le nombre de produits non conformes"
+                ],
+                "answer": "La performance globale d’un équipement"
+            },
+            {
+                "question": "Quel est l'un des objectifs de la maintenance autonome ?",
+                "options": [
+                    "Éviter les inspections périodiques",
+                    "Former les opérateurs à effectuer les maintenances de premier niveau",
+                    "Confier toutes les responsabilités à l’équipe de maintenance",
+                    "Réduire les coûts sans améliorer la qualité"
+                ],
+                "answer": "Former les opérateurs à effectuer les maintenances de premier niveau"
+            },
+            {
+                "question": "Quels sont les trois composants du TRS ?",
+                "options": [
+                    "Disponibilité, Performance, Rendement qualité",
+                    "Durée, Rendement, Coût",
+                    "Maintenance, Production, Logistique",
+                    "Vitesse, Précision, Rendement"
+                ],
+                "answer": "Disponibilité, Performance, Rendement qualité"
+            },
+            {
+                "question": "Quelle méthode de la TPM vise à intégrer la maintenance préventive dans les opérations quotidiennes ?",
+                "options": [
+                    "Maintenance planifiée",
+                    "Maintenance autonome",
+                    "Gestion des nouveaux équipements",
+                    "Formation et développement"
+                ],
+                "answer": "Maintenance autonome"
+            },
+            {
+                "question": "Quel pilier de la TPM vise à assurer le zéro défaut dans les processus ?",
+                "options": [
+                    "Gestion de la qualité des processus",
+                    "Gestion des nouveaux équipements",
+                    "Maintenance planifiée",
+                    "Formation continue"
+                ],
+                "answer": "Gestion de la qualité des processus"
+            },
+            {
+                "question": "Dans le SPC, que représente le coefficient Cm ?",
+                "options": [
+                    "La capacité d’un processus à respecter les tolérances spécifiées",
+                    "Le coût moyen de production",
+                    "La qualité des produits fabriqués",
+                    "La vitesse moyenne des machines"
+                ],
+                "answer": "La capacité d’un processus à respecter les tolérances spécifiées"
+            },
+            {
+                "question": "Quel est l’objectif principal du SPC (Statistical Process Control) ?",
+                "options": [
+                    "Réduire les coûts de production",
+                    "Maintenir les moyennes et étendues des processus sous contrôle",
+                    "Augmenter la tolérance des machines",
+                    "Standardiser toutes les machines"
+                ],
+                "answer": "Maintenir les moyennes et étendues des processus sous contrôle"
+            },
+            {
+                "question": "Que signifie le coefficient Cpk dans le SPC ?",
+                "options": [
+                    "La capacité du processus à produire des pièces conformes centrées",
+                    "Le coût total de maintenance",
+                    "La rapidité des machines",
+                    "Le nombre total de produits non conformes"
+                ],
+                "answer": "La capacité du processus à produire des pièces conformes centrées"
+            },
+            {
+                "question": "Quelle méthode SPC est utilisée pour représenter la variabilité d’un processus ?",
+                "options": [
+                    "Histogramme",
+                    "Carte Xm-R",
+                    "Diagramme de Pareto",
+                    "Cycle de PDCA"
+                ],
+                "answer": "Carte Xm-R"
+            },
+            {
+                "question": "Dans une carte Xm-R, que représente le Xm ?",
+                "options": [
+                    "La médiane des valeurs mesurées",
+                    "La moyenne des valeurs mesurées",
+                    "L’écart-type des mesures",
+                    "Le nombre total de valeurs mesurées"
+                ],
+                "answer": "La moyenne des valeurs mesurées"
+            },
+            {
+                "question": "En SPC, que signifie une valeur Cp < 1,33 ?",
+                "options": [
+                    "Le processus est parfaitement centré",
+                    "Le processus est incapable de respecter les tolérances",
+                    "Le processus produit uniquement des pièces conformes",
+                    "Le processus est en état optimal"
+                ],
+                "answer": "Le processus est incapable de respecter les tolérances"
+            },
+            {
+                "question": "Quel est le rôle principal des limites de contrôle (LSC et LIC) dans le SPC ?",
+                "options": [
+                    "Définir les tolérances des clients",
+                    "Surveiller la variabilité naturelle du processus",
+                    "Calculer le coût moyen de production",
+                    "Évaluer la vitesse de production"
+                ],
+                "answer": "Surveiller la variabilité naturelle du processus"
+            },
+            {
+                "question": "Que représente une dérive hors des limites de contrôle sur une carte SPC ?",
+                "options": [
+                    "Une variation normale du processus",
+                    "La présence d’une cause spéciale à analyser",
+                    "Une performance optimale du processus",
+                    "Une panne critique de l’équipement"
+                ],
+                "answer": "La présence d’une cause spéciale à analyser"
+            },
+            {
+                "question": "Quel est le principal objectif de la méthode 5S dans le Lean ?",
+                "options": [
+                    "Améliorer la communication entre les départements",
+                    "Créer un environnement de travail propre, organisé et sûr",
+                    "Standardiser les processus de production",
+                    "Augmenter la cadence des lignes de production"
+                ],
+                "answer": "Créer un environnement de travail propre, organisé et sûr"
+            },
+            {
+                "question": "Quel concept Lean est représenté par la 'Roue des 7 gaspillages' ?",
+                "options": [
+                    "Les catégories de tâches essentielles",
+                    "Les principaux types de pertes à éliminer",
+                    "Les outils de planification des projets",
+                    "Les étapes pour améliorer les compétences des employés"
+                ],
+                "answer": "Les principaux types de pertes à éliminer"
+            },
+            {
+                "question": "Dans la philosophie Lean, que signifie 'Tendre le flux' ?",
+                "options": [
+                    "Minimiser les variations de production pour répondre à la demande",
+                    "Augmenter les stocks pour éviter les ruptures",
+                    "Accélérer toutes les étapes du processus de production",
+                    "Planifier des productions en grande quantité"
+                ],
+                "answer": "Minimiser les variations de production pour répondre à la demande"
+            },
+            {
+                "question": "Dans la TPM, quel est le principal rôle des équipes multifonctionnelles ?",
+                "options": [
+                    "Se concentrer uniquement sur la maintenance planifiée",
+                    "Collaborer pour améliorer les équipements et les processus",
+                    "Superviser les opérateurs sur les lignes de production",
+                    "Effectuer les réparations sans consultation externe"
+                ],
+                "answer": "Collaborer pour améliorer les équipements et les processus"
+            },
+            {
+                "question": "Dans la gestion de la qualité des processus (TPM), qu'est-ce qui est directement lié à l'obtention du zéro défaut ?",
+                "options": [
+                    "La standardisation des tâches",
+                    "Le contrôle rigoureux des paramètres de production",
+                    "L'utilisation exclusive de nouvelles technologies",
+                    "La réduction des coûts de maintenance"
+                ],
+                "answer": "Le contrôle rigoureux des paramètres de production"
+            },
+            {
+                "question": "Quelle est l'une des 12 étapes clés de la mise en œuvre de la TPM ?",
+                "options": [
+                    "Inviter des experts externes à chaque phase",
+                    "Former le personnel sur la maintenance autonome",
+                    "Automatiser tous les processus de production",
+                    "Limiter la participation des opérateurs aux inspections"
+                ],
+                "answer": "Former le personnel sur la maintenance autonome"
+            },
+            {
+                "question": "Dans le SPC, pourquoi est-il important de calculer les limites de contrôle ?",
+                "options": [
+                    "Pour identifier les causes spéciales de variation",
+                    "Pour déterminer les coûts liés aux défauts",
+                    "Pour fixer les objectifs de production",
+                    "Pour évaluer la performance des opérateurs"
+                ],
+                "answer": "Pour identifier les causes spéciales de variation"
+            },
+            {
+                "question": "Que représente la dispersion dans une population normale (SPC) ?",
+                "options": [
+                    "La moyenne de toutes les valeurs mesurées",
+                    "L’écart entre les valeurs extrêmes d’un processus",
+                    "La répartition des valeurs autour de la moyenne",
+                    "Le temps total de production pour une série donnée"
+                ],
+                "answer": "La répartition des valeurs autour de la moyenne"
+            },
+            {
+                "question": "Pourquoi l'utilisation de la courbe de Gauss est-elle essentielle dans le SPC ?",
+                "options": [
+                    "Elle montre les tendances de production sur une période donnée",
+                    "Elle permet de prédire les défauts futurs",
+                    "Elle décrit la variabilité naturelle des processus",
+                    "Elle fixe les tolérances maximales pour les clients"
+                ],
+                "answer": "Elle décrit la variabilité naturelle des processus"
+            },
+            {
+                "question": "Quelle action est nécessaire lorsqu’un point dépasse les limites de contrôle sur une carte Xm-R ?",
+                "options": [
+                    "Réajuster les tolérances client",
+                    "Arrêter immédiatement la production",
+                    "Identifier et corriger la cause spéciale",
+                    "Modifier la cible des limites de contrôle"
+                ],
+                "answer": "Identifier et corriger la cause spéciale"
+            },
+            {
+                "question": "Quel est l’objectif du principe 'Heijunka' dans le modèle Toyota ?",
+                "options": [
+                    "Éliminer les variations de la charge de travail",
+                    "Accroître la production en augmentant la vitesse",
+                    "Utiliser des équipements automatisés pour toutes les tâches",
+                    "Planifier la production en grande quantité"
+                ],
+                "answer": "Éliminer les variations de la charge de travail"
+            },
+            {
+                "question": "Dans le Lean, lequel de ces éléments est considéré comme une perte ?",
+                "options": [
+                    "Stocks inutiles",
+                    "Réduction des délais",
+                    "Participation accrue des employés",
+                    "Amélioration continue"
+                ],
+                "answer": "Stocks inutiles"
+            },
+            {
+                "question": "Que représente le concept 'Jidoka' dans le Lean ?",
+                "options": [
+                    "L’automatisation avec un contrôle humain",
+                    "La standardisation des postes de travail",
+                    "La réduction des stocks intermédiaires",
+                    "L’accélération de la production"
+                ],
+                "answer": "L’automatisation avec un contrôle humain"
+            },
+            {
+                "question": "Quel outil Lean est utilisé pour visualiser le flux de valeur dans un processus ?",
+                "options": [
+                    "Value Stream Mapping (VSM)",
+                    "Carte Xm-R",
+                    "Diagramme de Pareto",
+                    "PDCA"
+                ],
+                "answer": "Value Stream Mapping (VSM)"
+            },
+            {
+                "question": "Quel est le but principal de l’approche Kaizen dans le Lean ?",
+                "options": [
+                    "Réaliser de grands changements technologiques",
+                    "Encourager des améliorations continues par petits pas",
+                    "Réduire les coûts en licenciant du personnel",
+                    "Automatiser entièrement les processus"
+                ],
+                "answer": "Encourager des améliorations continues par petits pas"
+            },
+            {
+                "question": "Dans la TPM, quelle étape de la maintenance autonome implique de définir des procédures d’entretien de premier niveau ?",
+                "options": [
+                    "Inspection et nettoyage initial",
+                    "Établissement des procédures",
+                    "Formation des opérateurs",
+                    "Amélioration continue"
+                ],
+                "answer": "Établissement des procédures"
+            },
+            {
+                "question": "Quelle est la première étape de la mise en œuvre de la TPM dans une entreprise ?",
+                "options": [
+                    "Établir un programme de gestion des équipements",
+                    "Faire une campagne d’information au personnel",
+                    "Introduire des outils d’analyse des causes",
+                    "Mettre en place des comités de projet"
+                ],
+                "answer": "Faire une campagne d’information au personnel"
+            },
+            {
+                "question": "Dans la TPM, quel est l'objectif de la gestion des nouveaux équipements ?",
+                "options": [
+                    "Réduire les coûts d’acquisition uniquement",
+                    "Simplifier l’opération et la maintenance des nouveaux équipements",
+                    "Éliminer tous les défauts dès leur conception",
+                    "Augmenter la complexité des nouveaux outils"
+                ],
+                "answer": "Simplifier l’opération et la maintenance des nouveaux équipements"
+            },
+            {
+                "question": "Quel type de perte est inclus dans le TRS (Taux de Rendement Synthétique) ?",
+                "options": [
+                    "Temps d’ouverture",
+                    "Arrêts planifiés",
+                    "Défauts de qualité",
+                    "Pertes environnementales"
+                ],
+                "answer": "Défauts de qualité"
+            },
+            {
+                "question": "Quel outil est utilisé dans le SPC pour déterminer la capacité d'une machine à produire dans les tolérances ?",
+                "options": [
+                    "Coefficient Cm",
+                    "Carte Xm-R",
+                    "Histogramme",
+                    "Cycle PDCA"
+                ],
+                "answer": "Coefficient Cm"
+            },
+            {
+                "question": "Dans le SPC, que représente le 'R' sur une carte Xm-R ?",
+                "options": [
+                    "La moyenne des mesures",
+                    "L’étendue des variations",
+                    "Le nombre de pièces défectueuses",
+                    "La durée moyenne de fonctionnement"
+                ],
+                "answer": "L’étendue des variations"
+            },
+            {
+                "question": "Pourquoi le calcul du R&R est-il important dans le SPC ?",
+                "options": [
+                    "Pour optimiser le coût de production",
+                    "Pour vérifier la précision des instruments de mesure",
+                    "Pour établir les tolérances des clients",
+                    "Pour améliorer la vitesse de production"
+                ],
+                "answer": "Pour vérifier la précision des instruments de mesure"
+            },
+            {
+                "question": "Dans le modèle Toyota, quel principe encourage les employés à visiter directement le site d’un problème pour mieux le comprendre ?",
+                "options": [
+                    "Genshi Genbutsu",
+                    "Heijunka",
+                    "Jidoka",
+                    "Kaizen"
+                ],
+                "answer": "Genshi Genbutsu"
+            },
+            {
+                "question": "Quelle méthode Lean est souvent représentée par un tableau pour suivre l'état des tâches ?",
+                "options": [
+                    "Kanban",
+                    "5S",
+                    "Kaizen",
+                    "Heijunka"
+                ],
+                "answer": "Kanban"
+            },
+            {
+                "question": "Quel est le principal objectif des 5M dans un processus de fabrication ?",
+                "options": [
+                    "Standardiser les outils de gestion",
+                    "Identifier et contrôler les sources de variabilité",
+                    "Augmenter la vitesse de production",
+                    "Réduire les coûts fixes"
+                ],
+                "answer": "Identifier et contrôler les sources de variabilité"
+            },
+            {
+                "question": "Dans le Lean, comment s'appelle la production tirée par la demande du client ?",
+                "options": [
+                    "Flux poussé",
+                    "Flux tiré",
+                    "Surproduction",
+                    "Production de masse"
+                ],
+                "answer": "Flux tiré"
+            },
+            {
+                "question": "Dans la TPM, quel pilier se concentre sur l'élimination des accidents et pannes ?",
+                "options": [
+                    "Gestion de la sécurité et de l'environnement",
+                    "Amélioration des équipements",
+                    "Maintenance planifiée",
+                    "Maintenance autonome"
+                ],
+                "answer": "Gestion de la sécurité et de l'environnement"
+            },
+            {
+                "question": "Dans le SPC, qu’indique une valeur Cp très proche de 1 ?",
+                "options": [
+                    "Un processus stable et bien centré",
+                    "Un processus proche de ses limites de tolérance",
+                    "Une mauvaise précision des instruments de mesure",
+                    "Une absence de variation dans le processus"
+                ],
+                "answer": "Un processus proche de ses limites de tolérance"
+            },
+            {
+                "question": "Quel est le rôle principal d’une analyse Pareto dans le Lean ?",
+                "options": [
+                    "Déterminer les sources de variations majeures",
+                    "Réduire le nombre de produits en production",
+                    "Standardiser les outils utilisés",
+                    "Augmenter les performances des opérateurs"
+                ],
+                "answer": "Déterminer les sources de variations majeures"
+            },
+            {
+                "question": "Dans le SPC, qu’indique une valeur Cpk inférieure à 1 ?",
+                "options": [
+                    "Un processus incapable de produire des pièces conformes",
+                    "Un processus parfaitement centré",
+                    "Un processus avec une variabilité faible",
+                    "Un processus adapté aux tolérances larges"
+                ],
+                "answer": "Un processus incapable de produire des pièces conformes"
+            },
+            {
+                "question": "Quel est l'objectif principal de la maintenance préventive ?",
+                "options": [
+                    "Réagir rapidement après une panne",
+                    "Anticiper les pannes en effectuant des inspections et des entretiens réguliers",
+                    "Réduire les coûts en limitant les interventions de maintenance",
+                    "Augmenter la durée des arrêts pour réparation"
+                ],
+                "answer": "Anticiper les pannes en effectuant des inspections et des entretiens réguliers"
+            },
+            {
+                "question": "Quelle caractéristique définit la maintenance curative ?",
+                "options": [
+                    "Elle est planifiée pour éviter les pannes",
+                    "Elle est réalisée après qu'une panne ou un problème est survenu",
+                    "Elle utilise des technologies avancées pour prévoir les défaillances",
+                    "Elle ne nécessite pas d’intervention humaine"
+                ],
+                "answer": "Elle est réalisée après qu'une panne ou un problème est survenu"
+            },
+            {
+                "question": "En quoi consiste la maintenance prédictive ?",
+                "options": [
+                    "Évaluer les performances des équipements à intervalles fixes",
+                    "Effectuer des réparations immédiates après une panne",
+                    "Analyser les données pour prévoir les pannes avant qu'elles ne surviennent",
+                    "Effectuer une maintenance systématique sans analyser les données"
+                ],
+                "answer": "Analyser les données pour prévoir les pannes avant qu'elles ne surviennent"
+            },
+            {
+                "question": "Quel outil est essentiel pour une maintenance préventive efficace ?",
+                "options": [
+                    "Un calendrier de maintenance",
+                    "Un tableau de suivi des pannes",
+                    "Un logiciel d'analyse prédictive",
+                    "Un stock important de pièces de rechange"
+                ],
+                "answer": "Un calendrier de maintenance"
+            },
+            {
+                "question": "Quand est-il idéal d’utiliser une checklist dans le cadre de la maintenance ?",
+                "options": [
+                    "Lors de la planification de la maintenance corrective uniquement",
+                    "Pendant les interventions pour s'assurer que toutes les étapes sont respectées",
+                    "Uniquement après la maintenance pour documenter les actions",
+                    "Lors de l'achat de nouveaux équipements"
+                ],
+                "answer": "Pendant les interventions pour s'assurer que toutes les étapes sont respectées"
+            },
+            {
+                "question": "Quelle est une bonne pratique pour créer une checklist de maintenance ?",
+                "options": [
+                    "Inclure uniquement les étapes critiques pour gagner du temps",
+                    "Lister toutes les tâches avec des descriptions claires et détaillées",
+                    "Rendre la checklist aussi longue que possible",
+                    "Créer des checklists différentes pour chaque opérateur"
+                ],
+                "answer": "Lister toutes les tâches avec des descriptions claires et détaillées"
+            },
+            {
+                "question": "Quel est le principal avantage des tables de suivi de maintenance ?",
+                "options": [
+                    "Elles permettent d'automatiser toutes les réparations",
+                    "Elles documentent l'historique des interventions et facilitent l'analyse",
+                    "Elles remplacent le besoin d'une maintenance prédictive",
+                    "Elles éliminent le besoin de formation des opérateurs"
+                ],
+                "answer": "Elles documentent l'historique des interventions et facilitent l'analyse"
+            },
+            {
+                "question": "Quelle information est essentielle dans une table de maintenance préventive ?",
+                "options": [
+                    "Le coût total de l'équipement",
+                    "La date de la dernière intervention et les tâches effectuées",
+                    "Le nombre total de pannes annuelles",
+                    "La performance des opérateurs"
+                ],
+                "answer": "La date de la dernière intervention et les tâches effectuées"
+            },
+            {
+                "question": "Quel est un indicateur clé pour évaluer l’efficacité d’un programme de maintenance prédictive ?",
+                "options": [
+                    "Le coût des réparations curatives",
+                    "Le taux de disponibilité des équipements",
+                    "La fréquence des arrêts planifiés",
+                    "La durée moyenne des interventions de maintenance"
+                ],
+                "answer": "Le taux de disponibilité des équipements"
+            },
+            {
+                "question": "Quel type de maintenance est souvent associé à une réduction des stocks de pièces de rechange ?",
+                "options": [
+                    "Maintenance curative",
+                    "Maintenance prédictive",
+                    "Maintenance préventive",
+                    "Maintenance autonome"
+                ],
+                "answer": "Maintenance prédictive"
+            },
+            {
+                "question": "Dans le cadre d'une maintenance curative, quelle est la première étape après une panne ?",
+                "options": [
+                    "Remplacer immédiatement l’équipement défectueux",
+                    "Analyser la cause de la panne pour éviter sa répétition",
+                    "Vérifier les niveaux de stock de pièces détachées",
+                    "Documenter les coûts de la panne"
+                ],
+                "answer": "Analyser la cause de la panne pour éviter sa répétition"
+            },
+            {
+                "question": "Comment les checklists peuvent-elles améliorer la maintenance préventive ?",
+                "options": [
+                    "En limitant les tâches à effectuer à un minimum absolu",
+                    "En standardisant les étapes pour éviter les oublis",
+                    "En augmentant les coûts pour garantir une meilleure qualité",
+                    "En réduisant la fréquence des interventions"
+                ],
+                "answer": "En standardisant les étapes pour éviter les oublis"
+            },
+            {
+                "question": "Quel est un exemple typique d’action de maintenance préventive ?",
+                "options": [
+                    "Réparation d'une pièce cassée",
+                    "Lubrification des pièces mobiles selon un planning établi",
+                    "Remplacement d'une pièce après détection d'une panne",
+                    "Reconfiguration d'un équipement pour un nouvel usage"
+                ],
+                "answer": "Lubrification des pièces mobiles selon un planning établi"
+            },
+            {
+                "question": "Comment une table de suivi peut-elle aider à la maintenance prédictive ?",
+                "options": [
+                    "En planifiant automatiquement les interventions",
+                    "En fournissant des données historiques pour analyser les tendances",
+                    "En supprimant la nécessité de checklists",
+                    "En réduisant le besoin de formation des opérateurs"
+                ],
+                "answer": "En fournissant des données historiques pour analyser les tendances"
+            },
+            {
+                "question": "Quelle est une limite de la maintenance curative ?",
+                "options": [
+                    "Elle augmente les coûts liés aux pannes imprévues",
+                    "Elle nécessite des technologies coûteuses",
+                    "Elle empêche toute planification des interventions",
+                    "Elle n'améliore pas les compétences des opérateurs"
+                ],
+                "answer": "Elle augmente les coûts liés aux pannes imprévues"
+            },
+            {
+                "question": "Quel est l'inconvénient principal de la maintenance curative ?",
+                "options": [
+                    "Elle nécessite un équipement avancé",
+                    "Elle entraîne des arrêts imprévus qui peuvent coûter cher",
+                    "Elle ne permet pas de planifier les interventions",
+                    "Elle est inefficace pour des machines complexes"
+                ],
+                "answer": "Elle entraîne des arrêts imprévus qui peuvent coûter cher"
+            },
+            {
+                "question": "Quelle technologie est souvent utilisée pour soutenir la maintenance prédictive ?",
+                "options": [
+                    "L’analyse vibratoire et les capteurs IoT",
+                    "Les logiciels de planification de la maintenance",
+                    "Les systèmes de gestion de stock",
+                    "Les outils de gestion de projet"
+                ],
+                "answer": "L’analyse vibratoire et les capteurs IoT"
+            },
+            {
+                "question": "Dans quel cas une maintenance préventive est-elle la plus efficace ?",
+                "options": [
+                    "Pour des équipements ayant des cycles de panne imprévisibles",
+                    "Pour des équipements critiques avec des pannes prévisibles",
+                    "Pour réduire les coûts dans une chaîne de production non critique",
+                    "Pour des machines qui n’ont jamais été utilisées"
+                ],
+                "answer": "Pour des équipements critiques avec des pannes prévisibles"
+            },
+            {
+                "question": "Que permet une table de maintenance curative bien tenue ?",
+                "options": [
+                    "D’automatiser les réparations",
+                    "De retracer l’historique des pannes et des interventions",
+                    "De réduire le besoin de maintenance préventive",
+                    "De prédire les pannes futures sans capteurs"
+                ],
+                "answer": "De retracer l’historique des pannes et des interventions"
+            },
+            {
+                "question": "Quel est un indicateur clé pour évaluer l'efficacité d'une maintenance préventive ?",
+                "options": [
+                    "La fréquence des arrêts imprévus",
+                    "Le coût total de la maintenance curative",
+                    "Le nombre total de machines dans l'usine",
+                    "Le nombre de checklists complétées"
+                ],
+                "answer": "La fréquence des arrêts imprévus"
+            },
+            {
+                "question": "Dans une checklist de maintenance, pourquoi est-il important d'inclure les instructions détaillées ?",
+                "options": [
+                    "Pour réduire la durée des interventions",
+                    "Pour garantir que toutes les étapes sont suivies correctement",
+                    "Pour éviter d'utiliser des outils complexes",
+                    "Pour limiter les compétences nécessaires aux opérateurs"
+                ],
+                "answer": "Pour garantir que toutes les étapes sont suivies correctement"
+            },
+            {
+                "question": "Dans une maintenance prédictive, que signifie le terme 'fiabilité conditionnelle' ?",
+                "options": [
+                    "La probabilité qu’un équipement fonctionne dans des conditions normales",
+                    "La capacité d’un équipement à s’adapter à des conditions extrêmes",
+                    "La probabilité de panne basée sur l’analyse de données en temps réel",
+                    "La performance d’un équipement dans un environnement contrôlé"
+                ],
+                "answer": "La probabilité de panne basée sur l’analyse de données en temps réel"
+            },
+            {
+                "question": "Pourquoi est-il essentiel de documenter toutes les pannes dans une table curative ?",
+                "options": [
+                    "Pour former de nouveaux opérateurs",
+                    "Pour analyser les tendances des pannes et éviter qu'elles ne se reproduisent",
+                    "Pour justifier les coûts auprès de la direction",
+                    "Pour automatiser les réparations futures"
+                ],
+                "answer": "Pour analyser les tendances des pannes et éviter qu'elles ne se reproduisent"
+            },
+            {
+                "question": "Quel type d'intervention est typique de la maintenance curative ?",
+                "options": [
+                    "Inspection planifiée des composants",
+                    "Réparation après une défaillance de l'équipement",
+                    "Analyse des données de performance en temps réel",
+                    "Entretien préventif régulier"
+                ],
+                "answer": "Réparation après une défaillance de l'équipement"
+            },
+            {
+                "question": "Comment la maintenance préventive peut-elle être améliorée avec des checklists ?",
+                "options": [
+                    "En réduisant le nombre de tâches à vérifier",
+                    "En standardisant les étapes nécessaires pour chaque intervention",
+                    "En automatisant toutes les tâches de maintenance",
+                    "En diminuant la fréquence des inspections"
+                ],
+                "answer": "En standardisant les étapes nécessaires pour chaque intervention"
+            },
+            {
+                "question": "Quelle donnée est essentielle dans une table de maintenance prédictive ?",
+                "options": [
+                    "Le nombre total d'équipements dans l'usine",
+                    "L’historique des mesures issues des capteurs",
+                    "La liste des opérateurs disponibles",
+                    "Le coût annuel de la maintenance"
+                ],
+                "answer": "L’historique des mesures issues des capteurs"
+            },
+            {
+                "question": "Quel est le principal avantage des systèmes de surveillance conditionnelle pour la maintenance prédictive ?",
+                "options": [
+                    "Ils permettent de réparer immédiatement les pannes",
+                    "Ils prévoient les pannes avant qu'elles ne surviennent",
+                    "Ils éliminent le besoin de maintenance préventive",
+                    "Ils réduisent le coût des équipements"
+                ],
+                "answer": "Ils prévoient les pannes avant qu'elles ne surviennent"
+            },
+            {
+                "question": "Dans une checklist de maintenance curative, quelle information est essentielle ?",
+                "options": [
+                    "Les coûts des réparations futures",
+                    "Les étapes précises pour résoudre le problème",
+                    "La liste des équipements critiques",
+                    "Le nombre de techniciens disponibles"
+                ],
+                "answer": "Les étapes précises pour résoudre le problème"
+            },
+            {
+                "question": "Quelle est la principale différence entre maintenance préventive et prédictive ?",
+                "options": [
+                    "La maintenance préventive est réactive, la prédictive est proactive",
+                    "La maintenance préventive suit un calendrier fixe, la prédictive repose sur des données en temps réel",
+                    "La maintenance prédictive est planifiée, la préventive est imprévisible",
+                    "La maintenance préventive nécessite des capteurs avancés, la prédictive non"
+                ],
+                "answer": "La maintenance préventive suit un calendrier fixe, la prédictive repose sur des données en temps réel"
+            },
+            {
+                "question": "Quel est le rôle des checklists dans une intervention de maintenance ?",
+                "options": [
+                    "Éviter d'utiliser des outils complexes",
+                    "S’assurer que toutes les étapes nécessaires sont effectuées",
+                    "Automatiser les réparations d’équipements",
+                    "Réduire la durée des interventions"
+                ],
+                "answer": "S’assurer que toutes les étapes nécessaires sont effectuées"
+            }
+        ]
+    }
+}
