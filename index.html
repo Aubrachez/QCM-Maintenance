@@ -10,9 +10,30 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 20px;
+            padding-top: 50px; /* Ajout d'espace pour compenser la navbar */
         }
         h1, h2 {
             color: #333;
+        }
+        /* Style de la navbar */
+        .navbar {
+            position: fixed; /* Fixe la navbar en haut */
+            top: 0;
+            left: 0;
+            width: 100%; /* Prend toute la largeur de l'écran */
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            z-index: 1000; /* Assure que la navbar soit toujours au-dessus du contenu */
+        }
+        .navbar span {
+            font-weight: bold;
+        }
+        /* Pour laisser de l'espace en dessous de la navbar */
+        .content {
+            padding-top: 60px; /* Espace ajouté pour ne pas cacher le contenu sous la navbar */
         }
         .question-container {
             margin-bottom: 20px;
@@ -60,13 +81,20 @@
     </style>
 </head>
 <body>
-    <h1>QCM maintenance</h1>
+    <div class="navbar">
+        Bonnes réponses : <span id="bonne-reponse">0</span>
+    </div>
 
-    <div id="qcm-container"></div>
+    <div class="content">
+        <h1>QCM maintenance</h1>
+
+        <div id="qcm-container"></div>
+    </div>
 
     <script>
-        bonne=0;
-        fausse=0;
+        let bonne = 0;
+        let fausse = 0;
+
         // Fonction pour charger le fichier JSON
         async function loadJSON() {
             try {
@@ -130,23 +158,25 @@
             // Coloration des réponses
             if (selectedOption === correctAnswer) {
                 optionElement.classList.add('correct'); // Bonne réponse
-                bonne=bonne+1
+                bonne = bonne + 1;
             } else {
                 optionElement.classList.add('incorrect'); // Mauvaise réponse
                 for (let opt of options) {
                     if (opt.textContent === correctAnswer) {
-                        fausse=fausse+1
+                        fausse = fausse + 1;
                         opt.classList.add('correct'); // Met en vert la bonne réponse
                     }
                 }
             }
-            console.log("Bonne réponses "+bonne  +"\nMauvaises réponses "+fausse);
-            if (bonne >0){
-                total=bonne+fausse
-                rend = bonne/total
-                console.log("\nRatio : " +rend)
+            console.log("Bonne réponses " + bonne + "\nMauvaises réponses " + fausse);
+            if (bonne > 0) {
+                total = bonne + fausse;
+                rend = bonne / total;
+                console.log("\nRatio : " + rend);
             }
 
+            // Mise à jour de la navbar avec le nombre de bonnes réponses
+            document.getElementById('bonne-reponse').textContent = bonne;
         }
 
         // Fonction pour afficher le QCM depuis le fichier JSON
@@ -168,6 +198,6 @@
         // Charger les données JSON à l'ouverture de la page
         loadJSON();
     </script>
-    Grégoire Antoine 
+    Grégoire Antoine
 </body>
 </html>
