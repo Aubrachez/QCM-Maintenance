@@ -1,7 +1,7 @@
 # /!\ IMPORTANT À LIRE /!\
 # QCM-Maintenance
 ### Comment ça fonctionne 
-J'ai fait un QCM pour navigateur web pour le cours de maintenance.
+*J'ai fait un QCM pour navigateur web pour le cours de maintenance.
 4 Réponses 1 seule bonne.
 Quand tu cliques sur la bonne elle s'éclaire en vert sinon elle s'éclaire en rouge et éclair en vert la correcte.
 Les questions et les réponses ne sont pas chaque fois dans le même ordre. 
@@ -10,7 +10,7 @@ Pour relancer le quiz il faut rafraichir la page.
 Si vous voulez alimenter le questionnaire ou faire d'autres fichier JSON pour d'autre matière hésité pas le repository est ouvert ;)
 
 ## Comment l'installer sur ton ordi et l'utiliser
-1) Assure toi d'avoir python sur ton ordinateur _Pour ça va dans ton terminal et tape python -v_
+1) Assure toi d'avoir python sur ton ordinateur _Pour ça va dans ton terminal et tape `python -v`_
 2) Crée un dossier maintenance sur ton bureau
 3) Télécharge les 2 fichiers et mets les dans le dossier maintenance sur ton bureau
 4) Ouvre un terminal windows
