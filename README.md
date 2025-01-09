@@ -44,11 +44,6 @@ modifier les réponses possibles dans otpions ou modifier la bonne réponse dans
  1) copier le fichier question.json
  2) Modifier le nom du fichier
  3) Modifier les questions pour les sujets que l'on veut
- 4) Aller dans index.html et modifier par le nom du nouveaux fichier
-Prendre la question dans le fichier question.json 
-modifier les réponses possibles dans otpions ou modifier la bonne réponse dans answer
- `{
-                "question": "Question",
-                "options": ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
-                "answer": "Bonne réponse"
- }, `
+ 4) Aller dans index.html et modifier  const response = await fetch('question.json');  // Remplace par l'URL du fichier JSON par le nom du nouveaux fichier
+
+
