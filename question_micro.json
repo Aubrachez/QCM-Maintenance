@@ -1,0 +1,286 @@
+{
+  "QCM": {
+      "Questions": [
+    {
+      "question": "À quoi sert un prescaler dans un timer STM32 ?",
+      "options": [
+        "Diviser la fréquence d'entrée du timer pour obtenir une fréquence plus basse",
+        "Multiplier la fréquence d'entrée du timer pour obtenir une fréquence plus haute",
+        "Changer la direction du comptage du timer",
+        "Réinitialiser le timer automatiquement"
+      ],
+      "answer": "Diviser la fréquence d'entrée du timer pour obtenir une fréquence plus basse"
+    },
+    {
+      "question": "Que contient le registre TIMx_ARR (Auto-reload Register) ?",
+      "options": [
+        "La valeur maximale que le compteur peut atteindre avant de générer un événement d'update",
+        "La valeur actuelle du compteur",
+        "Le facteur de division du prescaler",
+        "Le réglage de la direction du compteur"
+      ],
+      "answer": "La valeur maximale que le compteur peut atteindre avant de générer un événement d'update"
+    },
+    {
+      "question": "Quelle est l'utilité du bit UIE dans le registre TIMx_DIER ?",
+      "options": [
+        "Activer l'interruption d'update du timer",
+        "Changer la fréquence du timer",
+        "Configurer la direction du comptage",
+        "Désactiver les interruptions globales"
+      ],
+      "answer": "Activer l'interruption d'update du timer"
+    },
+    {
+      "question": "Que fait l'instruction GPIOA->BSRR = (1 << 5) ?",
+      "options": [
+        "Met le port PA5 à l'état haut (1)",
+        "Met le port PA5 à l'état bas (0)",
+        "Active l'horloge pour le port GPIOA",
+        "Configure PA5 comme une entrée"
+      ],
+      "answer": "Met le port PA5 à l'état haut (1)"
+    },
+    {
+      "question": "Comment vérifier si le bit 3 du port GPIOB est à 1 ?",
+      "options": [
+        "GPIOB->IDR & (1 << 3)",
+        "GPIOB->ODR & (1 << 3)",
+        "GPIOB->MODER & (1 << 3)",
+        "GPIOB->BSRR & (1 << 3)"
+      ],
+      "answer": "GPIOB->IDR & (1 << 3)"
+    },
+    {
+      "question": "Que se passe-t-il si vous écrivez 1 dans les bits supérieurs (16 à 31) du registre BSRR ?",
+      "options": [
+        "Le bit correspondant du port GPIO est mis à l'état bas (0)",
+        "Le bit correspondant du port GPIO est mis à l'état haut (1)",
+        "Le port GPIO est désactivé",
+        "Le port GPIO est réinitialisé"
+      ],
+      "answer": "Le bit correspondant du port GPIO est mis à l'état bas (0)"
+    },
+    {
+      "question": "Quelle est la fonction du bit CEN dans le registre TIMx_CR1 ?",
+      "options": [
+        "Activer ou désactiver le compteur du timer",
+        "Changer la direction du compteur",
+        "Réinitialiser le compteur à zéro",
+        "Configurer le mode one-pulse"
+      ],
+      "answer": "Activer ou désactiver le compteur du timer"
+    },
+    {
+      "question": "Dans quel registre configure-t-on le mode entrée/sortie d'une broche GPIO ?",
+      "options": [
+        "MODER",
+        "IDR",
+        "ODR",
+        "BSRR"
+      ],
+      "answer": "MODER"
+    },
+    {
+      "question": "Que fait le bit DIR dans le registre TIMx_CR1 ?",
+      "options": [
+        "Détermine la direction du compteur (upcounting ou downcounting)",
+        "Active ou désactive le timer",
+        "Configure la période d'auto-reload",
+        "Réinitialise le compteur"
+      ],
+      "answer": "Détermine la direction du compteur (upcounting ou downcounting)"
+    },
+    {
+      "question": "Que fait le bit UG dans le registre TIMx_EGR ?",
+      "options": [
+        "Génère un événement d'update immédiatement",
+        "Active une interruption de mise à jour",
+        "Réinitialise le registre d'auto-reload",
+        "Inverse la direction du compteur"
+      ],
+      "answer": "Génère un événement d'update immédiatement"
+    },
+    {
+      "question": "Comment configure-t-on PA5 comme une sortie ?",
+      "options": [
+        "GPIOA->MODER |= (1 << (5 * 2));",
+        "GPIOA->IDR |= (1 << 5);",
+        "GPIOA->ODR |= (1 << 5);",
+        "GPIOA->BSRR |= (1 << 5);"
+      ],
+      "answer": "GPIOA->MODER |= (1 << (5 * 2));"
+    },
+    {
+      "question": "Comment réinitialiser PA5 à 0 en utilisant le registre BSRR ?",
+      "options": [
+        "GPIOA->BSRR = (1 << (5 + 16));",
+        "GPIOA->BSRR = (1 << 5);",
+        "GPIOA->MODER &= ~(1 << 5);",
+        "GPIOA->ODR &= ~(1 << 5);"
+      ],
+      "answer": "GPIOA->BSRR = (1 << (5 + 16));"
+    },
+    {
+      "question": "Que fait le registre TIMx_PSC (Prescaler) ?",
+      "options": [
+        "Divise la fréquence d'entrée du timer",
+        "Définit la valeur initiale du compteur",
+        "Stocke la valeur actuelle du compteur",
+        "Réinitialise le timer"
+      ],
+      "answer": "Divise la fréquence d'entrée du timer"
+    },
+    {
+      "question": "Comment active-t-on le compteur d'un timer dans le registre TIMx_CR1 ?",
+      "options": [
+        "En réglant le bit CEN à 1",
+        "En réglant le bit DIR à 1",
+        "En réglant le bit ARPE à 1",
+        "En réglant le bit UG à 1"
+      ],
+      "answer": "En réglant le bit CEN à 1"
+    },
+    {
+      "question": "Que signifie UEV dans les registres liés au timer STM32 ?",
+      "options": [
+        "Update Event",
+        "Universal Event",
+        "Underflow Event",
+        "User Event"
+      ],
+      "answer": "Update Event"
+    },
+    {
+      "question": "Quel bit dans le registre TIMx_CR1 permet de désactiver les événements d'update ?",
+      "options": [
+        "UDIS",
+        "UIE",
+        "CEN",
+        "ARPE"
+      ],
+      "answer": "UDIS"
+    },
+    {
+      "question": "Comment configure-t-on une broche GPIO en entrée ?",
+      "options": [
+        "En réglant MODER à 00 pour cette broche",
+        "En réglant MODER à 01 pour cette broche",
+        "En réglant ODR à 1 pour cette broche",
+        "En écrivant dans le registre BSRR"
+      ],
+      "answer": "En réglant MODER à 00 pour cette broche"
+    },
+    {
+      "question": "Que fait le registre GPIOx_ODR ?",
+      "options": [
+        "Contrôle l'état des broches configurées en sortie",
+        "Lit l'état des broches configurées en entrée",
+        "Configure le mode des broches GPIO",
+        "Réinitialise toutes les broches"
+      ],
+      "answer": "Contrôle l'état des broches configurées en sortie"
+    },
+    {
+      "question": "Que fait l'instruction TIMx->PSC = 79 ?",
+      "options": [
+        "Configure le prescaler pour diviser la fréquence d'horloge par 80",
+        "Configure le prescaler pour multiplier la fréquence d'horloge par 79",
+        "Réinitialise le compteur du timer",
+        "Configure la période d'auto-reload"
+      ],
+      "answer": "Configure le prescaler pour diviser la fréquence d'horloge par 80"
+    },
+    {
+      "question": "À quoi sert le registre TIMx_CNT ?",
+      "options": [
+        "Stocker la valeur actuelle du compteur",
+        "Définir la période d'auto-reload",
+        "Diviser la fréquence d'entrée du timer",
+        "Activer le timer"
+      ],
+      "answer": "Stocker la valeur actuelle du compteur"
+    },
+    {
+      "question": "Que fait le bit ARPE dans TIMx_CR1 ?",
+      "options": [
+        "Permet de bufferiser le registre TIMx_ARR",
+        "Permet de configurer la direction du timer",
+        "Active le mode one-pulse",
+        "Réinitialise le compteur"
+      ],
+      "answer": "Permet de bufferiser le registre TIMx_ARR"
+    },
+    {
+      "question": "Que fait l'événement d'update (UEV) ?",
+      "options": [
+        "Réinitialise le compteur et charge les registres préchargés",
+        "Incrémente automatiquement le compteur",
+        "Désactive les interruptions globales",
+        "Change la fréquence d'entrée du timer"
+      ],
+      "answer": "Réinitialise le compteur et charge les registres préchargés"
+    },
+    {
+      "question": "Comment déclencher manuellement un événement d'update sur un timer ?",
+      "options": [
+        "En réglant le bit UG dans TIMx_EGR",
+        "En réglant le bit CEN dans TIMx_CR1",
+        "En écrivant dans TIMx_CNT",
+        "En configurant le prescaler"
+      ],
+      "answer": "En réglant le bit UG dans TIMx_EGR"
+    },
+    {
+      "question": "Quel registre est utilisé pour configurer la période d'auto-reload d'un timer ?",
+      "options": [
+        "TIMx_ARR",
+        "TIMx_PSC",
+        "TIMx_CNT",
+        "TIMx_CR1"
+      ],
+      "answer": "TIMx_ARR"
+    },
+    {
+      "question": "Comment réinitialiser la broche PA6 à l'état bas en utilisant le registre BSRR ?",
+      "options": [
+        "GPIOA->BSRR = (1 << (6 + 16));",
+        "GPIOA->BSRR = (1 << 6);",
+        "GPIOA->ODR &= ~(1 << 6);",
+        "GPIOA->MODER &= ~(1 << (6 * 2));"
+      ],
+      "answer": "GPIOA->BSRR = (1 << (6 + 16));"
+    },
+    {
+      "question": "Que retourne l'instruction GPIOB->IDR & (1 << 3) si PB3 est à 0 ?",
+      "options": [
+        "0",
+        "1",
+        "Une erreur",
+        "Un warning"
+      ],
+      "answer": "0"
+    },
+    {
+      "question": "Que fait le registre TIMx_DIER ?",
+      "options": [
+        "Active ou désactive les interruptions du timer",
+        "Configure la direction du compteur",
+        "Stocke la valeur actuelle du compteur",
+        "Définit la période d'auto-reload"
+      ],
+      "answer": "Active ou désactive les interruptions du timer"
+    },
+    {
+      "question": "Quel est l'effet d'écrire une valeur dans TIMx_CNT ?",
+      "options": [
+        "Définit directement la valeur du compteur",
+        "Change la fréquence d'horloge du timer",
+        "Réinitialise la période d'auto-reload",
+        "Active le prescaler"
+      ],
+      "answer": "Définit directement la valeur du compteur"
+    }
+  ]
+}
+}
