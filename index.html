@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCM SPC, TPM, Lean et SMED en maintenance</title>
+    <title>QCM </title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 20px;
+            align-items: center;
             padding-top: 50px; /* Ajout d'espace pour compenser la navbar */
         }
         h1, h2 {
             color: #333;
         }
-        /* Style de la navbar */
         .navbar {
-            position: fixed; /* Fixe la navbar en haut */
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%; /* Prend toute la largeur de l'écran */
+            width: 100%;
             background-color: #333;
             color: white;
             padding: 10px 20px;
             text-align: center;
             font-size: 18px;
-            z-index: 1000; /* Assure que la navbar soit toujours au-dessus du contenu */
+            z-index: 1000;
         }
         .navbar span {
             font-weight: bold;
         }
-        /* Pour laisser de l'espace en dessous de la navbar */
         .content {
-            padding-top: 60px; /* Espace ajouté pour ne pas cacher le contenu sous la navbar */
+            align-items: center;
+            padding-top: 60px;
         }
         .question-container {
+            align-items: center;
             margin-bottom: 20px;
             padding: 10px;
             background-color: #fff;
@@ -44,6 +45,7 @@
         }
         .question {
             font-weight: bold;
+            margin-bottom: 15px;
         }
         .options {
             margin-left: 20px;
@@ -60,14 +62,14 @@
             background-color: #d3d3d3;
         }
         .option.correct {
-            background-color: #90ee90; /* Vert clair */
+            background-color: #64b964;
         }
         .option.incorrect {
-            background-color: #ffcccb; /* Rouge clair */
+            background-color: #fcb6b5;
         }
         .option.disabled {
             cursor: not-allowed;
-            background-color: #e0e0e0 !important; /* Grisé */
+            background-color: #e0e0e0 !important;
         }
         .answer {
             font-weight: bold;
@@ -78,6 +80,23 @@
             margin-top: 40px;
             color: #444;
         }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -86,7 +105,13 @@
     </div>
 
     <div class="content">
-        <h1>QCM maintenance</h1>
+        <h1>QCM </h1>
+
+        <div class="buttons">
+            <button onclick="loadJSON('question.json')">Maintenance</button>
+            <button onclick="loadJSON('question_micro.json')">Micro controlleur</button>
+            <button onclick="loadJSON('suestion_envi.json')">Aspect environnement</button>
+        </div>
 
         <div id="qcm-container"></div>
     </div>
@@ -95,10 +120,9 @@
         let bonne = 0;
         let fausse = 0;
 
-        // Fonction pour charger le fichier JSON
-        async function loadJSON() {
+        async function loadJSON(fileName) {
             try {
-                const response = await fetch('question.json');  // Remplace par l'URL du fichier JSON
+                const response = await fetch(fileName);
                 const data = await response.json();
                 displayQCM(data);
             } catch (error) {
@@ -106,15 +130,13 @@
             }
         }
 
-        // Fonction pour mélanger les éléments d'un tableau
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]]; // Échange les éléments
+                [array[i], array[j]] = [array[j], array[i]];
             }
         }
 
-        // Fonction pour créer une section de questions
         function createQuestionSection(title, questions) {
             const section = document.createElement('div');
             const sectionTitle = document.createElement('h2');
@@ -130,7 +152,6 @@
                 questionElement.textContent = q.question;
                 questionContainer.appendChild(questionElement);
 
-                // Mélanger les options avant de les afficher
                 shuffleArray(q.options);
                 const optionsElement = document.createElement('div');
                 optionsElement.classList.add('options');
@@ -140,7 +161,6 @@
                     optionElement.classList.add('option');
                     optionElement.textContent = option;
 
-                    // Ajout de l'écouteur d'événements
                     optionElement.addEventListener('click', () => showAnswer(optionElement, q.answer, option, optionsElement));
                     optionsElement.appendChild(optionElement);
                 });
@@ -152,52 +172,35 @@
             return section;
         }
 
-        // Fonction pour afficher la réponse après un clic
         function showAnswer(optionElement, correctAnswer, selectedOption, optionsElement) {
             const options = optionsElement.children;
-            // Coloration des réponses
             if (selectedOption === correctAnswer) {
-                optionElement.classList.add('correct'); // Bonne réponse
-                bonne = bonne + 1;
+                optionElement.classList.add('correct');
+                bonne += 1;
             } else {
-                optionElement.classList.add('incorrect'); // Mauvaise réponse
+                optionElement.classList.add('incorrect');
                 for (let opt of options) {
                     if (opt.textContent === correctAnswer) {
-                        fausse = fausse + 1;
-                        opt.classList.add('correct'); // Met en vert la bonne réponse
+                        fausse += 1;
+                        opt.classList.add('correct');
                     }
                 }
             }
-            console.log("Bonne réponses " + bonne + "\nMauvaises réponses " + fausse);
-            if (bonne > 0) {
-                total = bonne + fausse;
-                rend = bonne / total;
-                console.log("\nRatio : " + rend);
-            }
-
-            // Mise à jour de la navbar avec le nombre de bonnes réponses
             document.getElementById('bonne-reponse').textContent = bonne;
         }
 
-        // Fonction pour afficher le QCM depuis le fichier JSON
         function displayQCM(qcmData) {
             const container = document.getElementById('qcm-container');
+            container.innerHTML = '';
 
-            // Parcours les sections et questions du JSON
             for (const section in qcmData) {
                 for (const title in qcmData[section]) {
-                    // Mélanger les questions avant de créer une section
                     shuffleArray(qcmData[section][title]);
-
                     const sectionElement = createQuestionSection(title, qcmData[section][title]);
                     container.appendChild(sectionElement);
                 }
             }
         }
-
-        // Charger les données JSON à l'ouverture de la page
-        loadJSON();
     </script>
-    Grégoire Antoine
 </body>
 </html>
