@@ -4,14 +4,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
      crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-766MTRW6W6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-766MTRW6W6');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-766MTRW6W6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-766MTRW6W6');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QCM </title>
@@ -114,50 +113,17 @@
     <div class="navbar">
         Bonnes réponses : <span id="bonne-reponse">0</span>
     </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
-     crossorigin="anonymous"></script>
-<!-- superieur -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1701912098353878"
-     data-ad-slot="6473832055"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
     <div class="content">
         <h1>QCM </h1>
 
         <div class="buttons">
             <button onclick="loadJSON('question.json')">Maintenance</button>
-            <button onclick="loadJSON('question_micro.json')">Micro controlleur</button>
+            <button onclick="loadJSON('question_micro.json')">Micro contrôleur</button>
             <button onclick="loadJSON('question_envi.json')">Aspect environnement</button>
         </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-1701912098353878"
-     data-ad-slot="5034689503"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        <div id="qcm-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-1701912098353878"
-     data-ad-slot="5034689503"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </div>
+
+        <div id="qcm-container"></div>
     </div>
 
     <script>
@@ -181,61 +147,60 @@
             }
         }
 
-function createQuestionSection(title, questions) {
-    const section = document.createElement('div');
-    const sectionTitle = document.createElement('h2');
-    sectionTitle.textContent = title;
-    section.appendChild(sectionTitle);
+        function createQuestionSection(title, questions) {
+            const section = document.createElement('div');
+            const sectionTitle = document.createElement('h2');
+            sectionTitle.textContent = title;
+            section.appendChild(sectionTitle);
 
-    questions.forEach((q, index) => {
-        const questionContainer = document.createElement('div');
-        questionContainer.classList.add('question-container');
+            questions.forEach((q, index) => {
+                const questionContainer = document.createElement('div');
+                questionContainer.classList.add('question-container');
 
-        const questionElement = document.createElement('div');
-        questionElement.classList.add('question');
-        questionElement.textContent = q.question;
-        questionContainer.appendChild(questionElement);
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question');
+                questionElement.textContent = q.question;
+                questionContainer.appendChild(questionElement);
 
-        shuffleArray(q.options);
-        const optionsElement = document.createElement('div');
-        optionsElement.classList.add('options');
+                shuffleArray(q.options);
+                const optionsElement = document.createElement('div');
+                optionsElement.classList.add('options');
 
-        q.options.forEach(option => {
-            const optionElement = document.createElement('div');
-            optionElement.classList.add('option');
-            optionElement.textContent = option;
+                q.options.forEach(option => {
+                    const optionElement = document.createElement('div');
+                    optionElement.classList.add('option');
+                    optionElement.textContent = option;
 
-            optionElement.addEventListener('click', () => showAnswer(optionElement, q.answer, option, optionsElement));
-            optionsElement.appendChild(optionElement);
-        });
+                    optionElement.addEventListener('click', () => showAnswer(optionElement, q.answer, option, optionsElement));
+                    optionsElement.appendChild(optionElement);
+                });
 
-        questionContainer.appendChild(optionsElement);
-        section.appendChild(questionContainer);
+                questionContainer.appendChild(optionsElement);
+                section.appendChild(questionContainer);
 
-        // Ajouter une publicité après chaque 10 questions
-        if ((index + 1) % 10 === 0) {
-            const adContainer = document.createElement('div');
-            adContainer.innerHTML = `
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
-                    crossorigin="anonymous"></script>
-                <!-- Entre question -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-1701912098353878"
-                    data-ad-slot="8058376460"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            `;
-            section.appendChild(adContainer);
+                // Ajouter une publicité après chaque 10 questions
+                if ((index + 1) % 10 === 0) {
+                    const adContainer = document.createElement('div');
+                    adContainer.innerHTML = `
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
+                            crossorigin="anonymous"></script>
+                        <!-- Entre question -->
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-1701912098353878"
+                            data-ad-slot="8058376460"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    `;
+                    section.appendChild(adContainer);
+                }
+            });
+
+            return section;
         }
-    });
-
-    return section;
-}
-
 
         function showAnswer(optionElement, correctAnswer, selectedOption, optionsElement) {
             const options = optionsElement.children;
@@ -267,16 +232,5 @@ function createQuestionSection(title, questions) {
             }
         }
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1701912098353878"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-fb+5w+4e-db+86"
-     data-ad-client="ca-pub-1701912098353878"
-     data-ad-slot="5034689503"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 </body>
 </html>
