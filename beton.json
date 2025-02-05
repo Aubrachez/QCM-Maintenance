@@ -240,6 +240,326 @@
           "Parce que l'eau évapore rapidement"
         ],
         "answer": "À cause de l'expansion de l'eau gelée dans ses pores"
+      },
+      {
+        "question": "Quel est le principal avantage du béton fibré ?",
+        "options": [
+          "Il est plus léger",
+          "Il est plus résistant aux fissures",
+          "Il nécessite moins d'eau",
+          "Il durcit plus rapidement"
+        ],
+        "answer": "Il est plus résistant aux fissures"
+      },
+      {
+        "question": "Quel type de béton est utilisé pour les structures soumises à des conditions sévères d'exposition ?",
+        "options": [
+          "Béton ordinaire",
+          "Béton autoplaçant",
+          "Béton haute performance",
+          "Béton allégé"
+        ],
+        "answer": "Béton haute performance"
+      },
+      {
+        "question": "Pourquoi utilise-t-on des superplastifiants dans le béton ?",
+        "options": [
+          "Pour réduire le temps de prise",
+          "Pour augmenter la fluidité sans ajouter d'eau",
+          "Pour améliorer la durabilité du béton",
+          "Pour diminuer la densité du béton"
+        ],
+        "answer": "Pour augmenter la fluidité sans ajouter d'eau"
+      },
+      {
+        "question": "Quel est l'effet principal du retrait du béton ?",
+        "options": [
+          "Augmentation de la résistance",
+          "Fissuration du béton",
+          "Diminution de la porosité",
+          "Réduction de la masse volumique"
+        ],
+        "answer": "Fissuration du béton"
+      },
+      {
+        "question": "Quel est le principal facteur influençant la durabilité du béton ?",
+        "options": [
+          "La quantité de sable",
+          "Le type de ciment utilisé",
+          "Le rapport eau/ciment",
+          "La vitesse de malaxage"
+        ],
+        "answer": "Le rapport eau/ciment"
+      },
+      {
+        "question": "Quel additif est souvent utilisé pour améliorer la résistance du béton aux attaques chimiques ?",
+        "options": [
+          "Fumée de silice",
+          "Sable siliceux",
+          "Fibres métalliques",
+          "Chaux hydratée"
+        ],
+        "answer": "Fumée de silice"
+      },
+      {
+        "question": "Quelle est la principale fonction d'un retardateur de prise ?",
+        "options": [
+          "Accélérer le durcissement du béton",
+          "Améliorer la résistance du béton",
+          "Retarder le début de la prise du béton",
+          "Réduire la quantité de ciment nécessaire"
+        ],
+        "answer": "Retarder le début de la prise du béton"
+      },
+      {
+        "question": "Pourquoi le béton est-il souvent armé avec de l'acier ?",
+        "options": [
+          "Pour réduire son coût",
+          "Pour améliorer sa résistance à la compression",
+          "Pour améliorer sa résistance à la traction",
+          "Pour diminuer son poids"
+        ],
+        "answer": "Pour améliorer sa résistance à la traction"
+      },
+      {
+        "question": "Quelle est la principale conséquence d'une carbonatation du béton ?",
+        "options": [
+          "Augmentation de la résistance du béton",
+          "Réduction de la résistance mécanique",
+          "Corrosion des armatures",
+          "Augmentation de la porosité du béton"
+        ],
+        "answer": "Corrosion des armatures"
+      },
+      {
+        "question": "Quel est le principal avantage du béton projeté ?",
+        "options": [
+          "Il sèche plus rapidement",
+          "Il est appliqué sans coffrage",
+          "Il est plus léger que le béton classique",
+          "Il ne nécessite pas de cure"
+        ],
+        "answer": "Il est appliqué sans coffrage"
+      },
+      {
+        "question": "Quels sont les composants principaux du béton ?",
+        "options": [
+          "Ciment, sable, gravillons, eau",
+          "Acier, sable, gravillons, eau",
+          "Plâtre, gravillons, ciment, eau",
+          "Argile, sable, ciment, eau"
+        ],
+        "answer": "Ciment, sable, gravillons, eau"
+      },
+      {
+        "question": "Quel est le rôle du ciment dans le béton ?",
+        "options": [
+          "Donner de la couleur au béton",
+          "Assurer la cohésion et la résistance mécanique",
+          "Alléger la structure du béton",
+          "Réduire la prise du béton"
+        ],
+        "answer": "Assurer la cohésion et la résistance mécanique"
+      },
+      {
+        "question": "Quelle est la masse volumique approximative d'un béton standard ?",
+        "options": [
+          "800 kg/m³",
+          "1600 kg/m³",
+          "2400 kg/m³",
+          "3000 kg/m³"
+        ],
+        "answer": "2400 kg/m³"
+      },
+      {
+        "question": "Quel est le rapport optimal entre la masse de ciment et la masse d'eau pour un béton de bonne qualité ?",
+        "options": [
+          "0.2",
+          "0.5",
+          "1.0",
+          "1.5"
+        ],
+        "answer": "0.5"
+      },
+      {
+        "question": "Quelle est la fonction des adjuvants dans le béton ?",
+        "options": [
+          "Augmenter la résistance mécanique",
+          "Réduire la quantité d'eau nécessaire",
+          "Accélérer ou retarder la prise",
+          "Toutes les réponses sont correctes"
+        ],
+        "answer": "Toutes les réponses sont correctes"
+      },
+      {
+        "question": "Pourquoi utilise-t-on du laitier de haut-fourneau dans le béton ?",
+        "options": [
+          "Pour colorer le béton",
+          "Pour améliorer la résistance aux sulfates et la durabilité",
+          "Pour réduire le temps de prise",
+          "Pour rendre le béton plus léger"
+        ],
+        "answer": "Pour améliorer la résistance aux sulfates et la durabilité"
+      },
+      {
+        "question": "Quelle est la principale caractéristique du béton cellulaire ?",
+        "options": [
+          "Il est extrêmement résistant à la compression",
+          "Il possède une faible densité et de bonnes propriétés isolantes",
+          "Il ne contient pas de ciment",
+          "Il est utilisé uniquement pour les ponts"
+        ],
+        "answer": "Il possède une faible densité et de bonnes propriétés isolantes"
+      },
+      {
+        "question": "Quel est le principal rôle du gypse dans le ciment ?",
+        "options": [
+          "Accélérer la prise du béton",
+          "Réguler la prise du ciment",
+          "Augmenter la résistance mécanique",
+          "Diminuer la quantité de clinker nécessaire"
+        ],
+        "answer": "Réguler la prise du ciment"
+      },
+      {
+        "question": "Pourquoi l’enrobage des armatures est-il important dans le béton armé ?",
+        "options": [
+          "Il améliore l'esthétique du béton",
+          "Il protège l'acier contre la corrosion",
+          "Il augmente la densité du béton",
+          "Il réduit le temps de prise du béton"
+        ],
+        "answer": "Il protège l'acier contre la corrosion"
+      },
+      {
+        "question": "Quelle est la principale conséquence de la carbonatation du béton ?",
+        "options": [
+          "Augmentation de la résistance du béton",
+          "Réduction de la résistance mécanique",
+          "Corrosion des armatures",
+          "Augmentation de la porosité du béton"
+        ],
+        "answer": "Corrosion des armatures"
+      },
+       {
+        "question": "Quels sont les composants principaux du béton ?",
+        "options": [
+          "Ciment, sable, gravillons, eau",
+          "Acier, sable, gravillons, eau",
+          "Plâtre, gravillons, ciment, eau",
+          "Argile, sable, ciment, eau"
+        ],
+        "answer": "Ciment, sable, gravillons, eau"
+      },
+      {
+        "question": "Quel est le rôle du ciment dans le béton ?",
+        "options": [
+          "Donner de la couleur au béton",
+          "Assurer la cohésion et la résistance mécanique",
+          "Alléger la structure du béton",
+          "Réduire la prise du béton"
+        ],
+        "answer": "Assurer la cohésion et la résistance mécanique"
+      },
+      {
+        "question": "Quelle est la masse volumique approximative d'un béton standard ?",
+        "options": [
+          "800 kg/m³",
+          "1600 kg/m³",
+          "2400 kg/m³",
+          "3000 kg/m³"
+        ],
+        "answer": "2400 kg/m³"
+      },
+      {
+        "question": "Quel est le rapport optimal entre la masse de ciment et la masse d'eau pour un béton de bonne qualité ?",
+        "options": [
+          "0.2",
+          "0.5",
+          "1.0",
+          "1.5"
+        ],
+        "answer": "0.5"
+      },
+      {
+        "question": "Quelle est la fonction des adjuvants dans le béton ?",
+        "options": [
+          "Augmenter la résistance mécanique",
+          "Réduire la quantité d'eau nécessaire",
+          "Accélérer ou retarder la prise",
+          "Toutes les réponses sont correctes"
+        ],
+        "answer": "Toutes les réponses sont correctes"
+      },
+      {
+        "question": "Pourquoi utilise-t-on du laitier de haut-fourneau dans le béton ?",
+        "options": [
+          "Pour colorer le béton",
+          "Pour améliorer la résistance aux sulfates et la durabilité",
+          "Pour réduire le temps de prise",
+          "Pour rendre le béton plus léger"
+        ],
+        "answer": "Pour améliorer la résistance aux sulfates et la durabilité"
+      },
+      {
+        "question": "Quels sont les différents types de béton selon leur usage ?",
+        "options": [
+          "Béton ordinaire, béton armé, béton précontraint",
+          "Béton léger, béton fibré, béton réfractaire",
+          "Béton autoplaçant, béton haute performance, béton projeté",
+          "Toutes les réponses sont correctes"
+        ],
+        "answer": "Toutes les réponses sont correctes"
+      },
+      {
+        "question": "Quel est l'impact d'un excès d'eau dans le béton frais ?",
+        "options": [
+          "Augmentation de la résistance",
+          "Réduction de la résistance et augmentation du retrait",
+          "Amélioration de la durabilité",
+          "Diminution du temps de prise"
+        ],
+        "answer": "Réduction de la résistance et augmentation du retrait"
+      },
+      {
+        "question": "Quels sont les principaux types de ciment utilisés dans le béton ?",
+        "options": [
+          "Ciment Portland, ciment alumineux, ciment composé",
+          "Ciment expansif, ciment à prise rapide, ciment à faible chaleur d'hydratation",
+          "Ciment blanc, ciment pouzzolanique, ciment sulfo-alumineux",
+          "Toutes les réponses sont correctes"
+        ],
+        "answer": "Toutes les réponses sont correctes"
+      },
+      {
+        "question": "Quelle est la fonction des fibres ajoutées au béton fibré ?",
+        "options": [
+          "Améliorer la résistance en flexion et limiter la fissuration",
+          "Réduire la masse volumique du béton",
+          "Accélérer la prise du béton",
+          "Faciliter le pompage du béton"
+        ],
+        "answer": "Améliorer la résistance en flexion et limiter la fissuration"
+      },
+      {
+        "question": "Quel est le rôle du béton de chanvre ?",
+        "options": [
+          "Servir d'isolant thermique et phonique",
+          "Remplacer totalement le béton classique",
+          "Être utilisé uniquement pour les ponts",
+          "Augmenter la masse volumique du béton"
+        ],
+        "answer": "Servir d'isolant thermique et phonique"
+      },
+      {
+        "question": "Pourquoi le béton réfractaire est-il utilisé ?",
+        "options": [
+          "Pour résister à des températures élevées",
+          "Pour être plus léger",
+          "Pour accélérer la prise du béton",
+          "Pour être utilisé dans des ouvrages sous-marins"
+        ],
+        "answer": "Pour résister à des températures élevées"
       }
     ]
   }
