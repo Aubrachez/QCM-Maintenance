@@ -100,6 +100,146 @@
           "Il réduit le temps de prise du béton"
         ],
         "answer": "Il protège l'acier contre la corrosion"
+      },
+      {
+        "question": "Quelle est la principale caractéristique du ciment Portland ?",
+        "options": [
+          "Il est composé uniquement de chaux",
+          "Il contient du clinker comme élément principal",
+          "Il ne durcit qu'en présence d'air",
+          "Il est utilisé uniquement pour les bétons légers"
+        ],
+        "answer": "Il contient du clinker comme élément principal"
+      },
+      {
+        "question": "Quelle est la proportion typique de granulats dans un béton standard ?",
+        "options": [
+          "Environ 30%",
+          "Environ 50%",
+          "Environ 70%",
+          "Environ 90%"
+        ],
+        "answer": "Environ 70%"
+      },
+      {
+        "question": "Pourquoi ajoute-t-on des adjuvants dans le béton ?",
+        "options": [
+          "Pour réduire son coût de production",
+          "Pour améliorer certaines propriétés spécifiques",
+          "Pour remplacer le ciment",
+          "Pour réduire le temps de malaxage"
+        ],
+        "answer": "Pour améliorer certaines propriétés spécifiques"
+      },
+      {
+        "question": "Quel est le principal facteur influençant la résistance finale d'un béton ?",
+        "options": [
+          "La quantité de ciment",
+          "La taille des granulats",
+          "Le rapport eau/ciment",
+          "La durée du malaxage"
+        ],
+        "answer": "Le rapport eau/ciment"
+      },
+      {
+        "question": "Quelle est la principale cause de la fissuration du béton frais ?",
+        "options": [
+          "Un excès d'eau",
+          "Un manque de granulats",
+          "Une prise trop rapide",
+          "Une mauvaise répartition du ciment"
+        ],
+        "answer": "Un excès d'eau"
+      },
+      {
+        "question": "Quel est le rôle du laitier de haut-fourneau dans le ciment ?",
+        "options": [
+          "Accélérer la prise",
+          "Améliorer la résistance aux sulfates",
+          "Réduire la masse volumique du béton",
+          "Rendre le béton plus ductile"
+        ],
+        "answer": "Améliorer la résistance aux sulfates"
+      },
+      {
+        "question": "Quels sont les deux principaux types de granulats utilisés dans le béton ?",
+        "options": [
+          "Le gravier et l'argile",
+          "Le sable et le gravier",
+          "Le calcaire et la silice",
+          "Le sable et la chaux"
+        ],
+        "answer": "Le sable et le gravier"
+      },
+      {
+        "question": "Quelle est la principale propriété du béton cellulaire ?",
+        "options": [
+          "Il est extrêmement résistant à la compression",
+          "Il possède une faible densité et de bonnes propriétés isolantes",
+          "Il ne contient pas de ciment",
+          "Il est utilisé uniquement pour les ponts"
+        ],
+        "answer": "Il possède une faible densité et de bonnes propriétés isolantes"
+      },
+      {
+        "question": "Quel est le principal avantage du béton autoplaçant ?",
+        "options": [
+          "Il durcit plus rapidement",
+          "Il nécessite moins de ciment",
+          "Il ne nécessite pas de vibration pour être mis en place",
+          "Il est moins coûteux"
+        ],
+        "answer": "Il ne nécessite pas de vibration pour être mis en place"
+      },
+      {
+        "question": "Quelle est l'importance de l'enrobage des armatures dans le béton armé ?",
+        "options": [
+          "Il améliore l'esthétique du béton",
+          "Il protège l'acier contre la corrosion",
+          "Il augmente la densité du béton",
+          "Il réduit le temps de prise du béton"
+        ],
+        "answer": "Il protège l'acier contre la corrosion"
+      },
+      {
+        "question": "Quel est le principal inconvénient du béton à haute résistance ?",
+        "options": [
+          "Il est plus coûteux",
+          "Il prend plus de temps à sécher",
+          "Il est moins durable",
+          "Il nécessite plus d'eau"
+        ],
+        "answer": "Il est plus coûteux"
+      },
+      {
+        "question": "Quel est l'effet principal d'un excès d'eau dans le béton ?",
+        "options": [
+          "Augmentation de la résistance",
+          "Réduction du retrait",
+          "Diminution de la résistance mécanique",
+          "Amélioration de la durabilité"
+        ],
+        "answer": "Diminution de la résistance mécanique"
+      },
+      {
+        "question": "Quel est le rôle principal de la fumée de silice dans le béton ?",
+        "options": [
+          "Réduire la prise du béton",
+          "Augmenter la porosité",
+          "Améliorer la résistance mécanique",
+          "Diminuer la densité du béton"
+        ],
+        "answer": "Améliorer la résistance mécanique"
+      },
+      {
+        "question": "Pourquoi le béton est-il sensible aux cycles gel-dégel ?",
+        "options": [
+          "À cause de sa forte teneur en air",
+          "À cause de l'expansion de l'eau gelée dans ses pores",
+          "Parce qu'il contient du calcaire",
+          "Parce que l'eau évapore rapidement"
+        ],
+        "answer": "À cause de l'expansion de l'eau gelée dans ses pores"
       }
     ]
   }
