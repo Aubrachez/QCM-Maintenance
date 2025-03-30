@@ -1,0 +1,186 @@
+{
+    "QCM": {
+        "Questions": [
+            {
+                "question": "Quelle est la définition de la santé selon l'OMS?",
+                "options": [
+                    "Absence de maladie ou d'infirmité",
+                    "Un état de complet bien-être physique, mental et social",
+                    "Capacité à résister aux infections",
+                    "Un état d'équilibre biologique"
+                ],
+                "answer": "Un état de complet bien-être physique, mental et social"
+            },
+            {
+                "question": "Quel est le but de la prévention primaire?",
+                "options": [
+                    "Prévenir l'exposition aux facteurs de risque",
+                    "Diagnostiquer précocement une maladie",
+                    "Traiter une maladie chronique",
+                    "Améliorer le bien-être psychologique"
+                ],
+                "answer": "Prévenir l'exposition aux facteurs de risque"
+            },
+            {
+                "question": "Quel postulat de Koch n'est pas applicable aux virus?",
+                "options": [
+                    "L'agent doit être présent chez chaque cas de la maladie",
+                    "L'agent doit pouvoir être isolé et pousser en culture pure",
+                    "L'agent doit provoquer la maladie lorsqu'inoculé à un hôte sain",
+                    "L'agent doit pouvoir être ré-isolé chez l'hôte inoculé"
+                ],
+                "answer": "L'agent doit pouvoir être isolé et pousser en culture pure"
+            },
+            {
+                "question": "Le tabac est un facteur de risque pour le cancer du poumon. Selon le modèle probabiliste, il s'agit :",
+                "options": [
+                    "D'une cause suffisante",
+                    "D'une cause nécessaire",
+                    "D'une condition ni suffisante ni nécessaire",
+                    "D'un facteur sans influence sur la maladie"
+                ],
+                "answer": "D'une condition ni suffisante ni nécessaire"
+            },
+            {
+                "question": "Quelle est la phase de la maladie durant laquelle elle est asymptomatique mais avec altérations physiopathologiques?",
+                "options": [
+                    "Phase d'induction",
+                    "Phase de promotion",
+                    "Phase d'expression",
+                    "Phase clinique tardive"
+                ],
+                "answer": "Phase de promotion"
+            },
+            {
+                "question": "Selon les critères de Hill, quel critère permet de s'assurer que la cause précède l'effet?",
+                "options": [
+                    "Force de l'association",
+                    "Spécificité de l'association",
+                    "Relation temporelle",
+                    "Plausibilité biologique"
+                ],
+                "answer": "Relation temporelle"
+            },
+            {
+                "question": "Quelle est la finalité de la prévention tertiaire?",
+                "options": [
+                    "Empêcher l'exposition aux facteurs de risque",
+                    "Traiter la maladie à un stade précoce",
+                    "Limiter les complications d'une maladie",
+                    "Éradiquer complètement la maladie"
+                ],
+                "answer": "Limiter les complications d'une maladie"
+            },
+            {
+                "question": "Dans le modèle épidémiologique, quelle est l'issue finale de la maladie?",
+                "options": [
+                    "Phase d'induction",
+                    "Phase de latence",
+                    "Guérison, chronicité ou décès",
+                    "Phase d'expression"
+                ],
+                "answer": "Guérison, chronicité ou décès"
+            },
+            {
+                "question": "Quelle relation causale implique qu'un facteur est toujours présent lorsque la maladie est présente, mais son absence n'empêche pas la maladie?",
+                "options": [
+                    "Cause suffisante",
+                    "Cause nécessaire",
+                    "Condition ni suffisante ni nécessaire",
+                    "Aucune des réponses ci-dessus"
+                ],
+                "answer": "Cause nécessaire"
+            },
+            {
+                "question": "Quelle est la définition de la santé selon l'OMS?",
+                "options": [
+                    "Absence de maladie ou d'infirmité",
+                    "Un état de complet bien-être physique, mental et social",
+                    "Capacité à résister aux infections",
+                    "Un état d'équilibre biologique"
+                ],
+                "answer": "Un état de complet bien-être physique, mental et social"
+            },
+            {
+                "question": "Quel est le but de la prévention primaire?",
+                "options": [
+                    "Prévenir l'exposition aux facteurs de risque",
+                    "Diagnostiquer précocement une maladie",
+                    "Traiter une maladie chronique",
+                    "Améliorer le bien-être psychologique"
+                ],
+                "answer": "Prévenir l'exposition aux facteurs de risque"
+            },
+            {
+                "question": "Quel postulat de Koch n'est pas applicable aux virus?",
+                "options": [
+                    "L'agent doit être présent chez chaque cas de la maladie",
+                    "L'agent doit pouvoir être isolé et pousser en culture pure",
+                    "L'agent doit provoquer la maladie lorsqu'inoculé à un hôte sain",
+                    "L'agent doit pouvoir être ré-isolé chez l'hôte inoculé"
+                ],
+                "answer": "L'agent doit pouvoir être isolé et pousser en culture pure"
+            },
+            {
+                "question": "Le tabac est un facteur de risque pour le cancer du poumon. Selon le modèle probabiliste, il s'agit :",
+                "options": [
+                    "D'une cause suffisante",
+                    "D'une cause nécessaire",
+                    "D'une condition ni suffisante ni nécessaire",
+                    "D'un facteur sans influence sur la maladie"
+                ],
+                "answer": "D'une condition ni suffisante ni nécessaire"
+            },
+            {
+                "question": "Quelle est la phase de la maladie durant laquelle elle est asymptomatique mais avec altérations physiopathologiques?",
+                "options": [
+                    "Phase d'induction",
+                    "Phase de promotion",
+                    "Phase d'expression",
+                    "Phase clinique tardive"
+                ],
+                "answer": "Phase de promotion"
+            },
+            {
+                "question": "Selon les critères de Hill, quel critère permet de s'assurer que la cause précède l'effet?",
+                "options": [
+                    "Force de l'association",
+                    "Spécificité de l'association",
+                    "Relation temporelle",
+                    "Plausibilité biologique"
+                ],
+                "answer": "Relation temporelle"
+            },
+            {
+                "question": "Quelle est la finalité de la prévention tertiaire?",
+                "options": [
+                    "Empêcher l'exposition aux facteurs de risque",
+                    "Traiter la maladie à un stade précoce",
+                    "Limiter les complications d'une maladie",
+                    "Éradiquer complètement la maladie"
+                ],
+                "answer": "Limiter les complications d'une maladie"
+            },
+            {
+                "question": "Dans le modèle épidémiologique, quelle est l'issue finale de la maladie?",
+                "options": [
+                    "Phase d'induction",
+                    "Phase de latence",
+                    "Guérison, chronicité ou décès",
+                    "Phase d'expression"
+                ],
+                "answer": "Guérison, chronicité ou décès"
+            },
+            {
+                "question": "Quelle relation causale implique qu'un facteur est toujours présent lorsque la maladie est présente, mais son absence n'empêche pas la maladie?",
+                "options": [
+                    "Cause suffisante",
+                    "Cause nécessaire",
+                    "Condition ni suffisante ni nécessaire",
+                    "Aucune des réponses ci-dessus"
+                ],
+                "answer": "Cause nécessaire"
+            }
+        ]
+    }
+}
