@@ -180,6 +180,46 @@
                     "Aucune des réponses ci-dessus"
                 ],
                 "answer": "Cause nécessaire"
+            },
+            {
+                "question": "Quels sont les principaux indicateurs épidémiologiques ?",
+                "options": [
+                    "Indicateurs de morbidité et mortalité",
+                    "Indicateurs économiques",
+                    "Indicateurs météorologiques",
+                    "Indicateurs de pollution"
+                ],
+                "answer": "Indicateurs de morbidité et mortalité"
+            },
+            {
+                "question": "Quel est un indicateur de mortalité ?",
+                "options": [
+                    "Prévalence",
+                    "Incidence",
+                    "Taux brut de mortalité",
+                    "Indice de masse corporelle"
+                ],
+                "answer": "Taux brut de mortalité"
+            },
+            {
+                "question": "Que mesure l'incidence en épidémiologie ?",
+                "options": [
+                    "Le nombre total de cas d'une maladie",
+                    "Le nombre de nouveaux cas sur une période donnée",
+                    "Le nombre de décès toutes causes confondues",
+                    "La durée moyenne d'une maladie"
+                ],
+                "answer": "Le nombre de nouveaux cas sur une période donnée"
+            },
+            {
+                "question": "Que représente la létalité en épidémiologie ?",
+                "options": [
+                    "Le pourcentage de décès parmi les personnes atteintes d'une maladie",
+                    "Le nombre de cas d'une maladie par an",
+                    "Le taux de mortalité global d'une population",
+                    "La prévalence d'une maladie chronique"
+                ],
+                "answer": "Le pourcentage de décès parmi les personnes atteintes d'une maladie"
             }
         ]
     }
