@@ -1,0 +1,356 @@
+{
+    "QCM": {
+        "Questions": [
+            {
+                "question": "Qu'est-ce que la caractérisation d'un matériau ?",
+                "options": [
+                    "L’étude de sa couleur",
+                    "La description de sa forme géométrique",
+                    "La détermination de ses propriétés mécaniques, thermiques, etc.",
+                    "Le calcul de son coût de production"
+                ],
+                "answer": "La détermination de ses propriétés mécaniques, thermiques, etc."
+            },
+            {
+                "question": "Quel appareil est utilisé pour la mesure de la dureté Vickers ?",
+                "options": [
+                    "Un duromètre à bille",
+                    "Un microduromètre avec une pointe pyramidale",
+                    "Un extensomètre",
+                    "Un calorimètre"
+                ],
+                "answer": "Un microduromètre avec une pointe pyramidale"
+            },
+            {
+                "question": "La spectrométrie infrarouge permet d’identifier :",
+                "options": [
+                    "La couleur d’un matériau",
+                    "Les groupements fonctionnels dans une molécule",
+                    "La masse atomique des éléments",
+                    "La forme d’un objet"
+                ],
+                "answer": "Les groupements fonctionnels dans une molécule"
+            },
+            {
+                "question": "Quel type de microscope permet d’observer des structures à l’échelle atomique ?",
+                "options": [
+                    "Le microscope optique",
+                    "Le microscope électronique à transmission (MET)",
+                    "Le microscope à lumière polarisée",
+                    "Le microscope à fluorescence"
+                ],
+                "answer": "Le microscope électronique à transmission (MET)"
+            },
+            {
+                "question": "La diffraction des rayons X est utilisée pour :",
+                "options": [
+                    "Mesurer la température",
+                    "Déterminer la structure cristalline d’un matériau",
+                    "Connaître la densité d’un matériau",
+                    "Mesurer la dureté"
+                ],
+                "answer": "Déterminer la structure cristalline d’un matériau"
+            },
+          {
+                "question": "Quel est le principe de la calorimétrie différentielle à balayage (DSC) ?",
+                "options": [
+                    "Mesurer la masse d’un échantillon",
+                    "Comparer l’absorption d’UV entre deux échantillons",
+                    "Mesurer les échanges de chaleur entre un échantillon et une référence",
+                    "Observer la fluorescence d’un matériau"
+                ],
+                "answer": "Mesurer les échanges de chaleur entre un échantillon et une référence"
+            },
+            {
+                "question": "Quelle information la courbe de DSC fournit-elle ?",
+                "options": [
+                    "La conductivité électrique",
+                    "Les températures de transition d’un matériau",
+                    "La densité atomique",
+                    "Le module d’élasticité"
+                ],
+                "answer": "Les températures de transition d’un matériau"
+            },
+            {
+                "question": "Lors d’un essai de traction, le module d’Young est calculé à partir de :",
+                "options": [
+                    "La pente de la courbe contrainte-déformation élastique",
+                    "La surface de la courbe",
+                    "La longueur initiale de l’éprouvette",
+                    "Le diamètre de l’éprouvette"
+                ],
+                "answer": "La pente de la courbe contrainte-déformation élastique"
+            },
+            {
+                "question": "Quelle propriété est obtenue grâce à l’essai de dureté ?",
+                "options": [
+                    "La densité du matériau",
+                    "La température de fusion",
+                    "La résistance à la déformation plastique",
+                    "La capacité calorifique"
+                ],
+                "answer": "La résistance à la déformation plastique"
+            },
+            {
+                "question": "Pourquoi utilise-t-on la microscopie optique polarisée ?",
+                "options": [
+                    "Pour observer les métaux fondus",
+                    "Pour étudier les polymères semi-cristallins",
+                    "Pour mesurer la conductivité thermique",
+                    "Pour colorer les surfaces métalliques"
+                ],
+                "answer": "Pour étudier les polymères semi-cristallins"
+            },
+          {
+                "question": "Quelle est l’unité de mesure utilisée pour la dureté Vickers ?",
+                "options": [
+                    "Pascal (Pa)",
+                    "Newton (N)",
+                    "Kg/mm²",
+                    "Joule (J)"
+                ],
+                "answer": "Kg/mm²"
+            },
+            {
+                "question": "Que mesure principalement un essai de traction ?",
+                "options": [
+                    "La densité de l’échantillon",
+                    "La température de fusion",
+                    "La résistance mécanique et l’élasticité",
+                    "La conductivité thermique"
+                ],
+                "answer": "La résistance mécanique et l’élasticité"
+            },
+            {
+                "question": "Le comportement plastique d’un matériau correspond à :",
+                "options": [
+                    "Sa capacité à revenir à sa forme initiale",
+                    "Une déformation réversible",
+                    "Une déformation irréversible",
+                    "Une élévation de température"
+                ],
+                "answer": "Une déformation irréversible"
+            },
+            {
+                "question": "Quel phénomène est observé à la température de transition vitreuse (Tg) ?",
+                "options": [
+                    "Fusion d’un métal",
+                    "Passage d’un état amorphe rigide à un état caoutchouteux",
+                    "Solidification d’un liquide",
+                    "Oxydation d’un polymère"
+                ],
+                "answer": "Passage d’un état amorphe rigide à un état caoutchouteux"
+            },
+            {
+                "question": "Que permet de caractériser un thermogravimètre ?",
+                "options": [
+                    "Le taux d’humidité d’un matériau",
+                    "La variation de masse en fonction de la température",
+                    "La tension superficielle d’un liquide",
+                    "La diffraction de la lumière"
+                ],
+                "answer": "La variation de masse en fonction de la température"
+            },
+          {
+                "question": "Quel type d’information fournit un spectre infrarouge d’un polymère ?",
+                "options": [
+                    "La masse molaire",
+                    "La composition élémentaire",
+                    "Les groupements fonctionnels présents",
+                    "La densité optique"
+                ],
+                "answer": "Les groupements fonctionnels présents"
+            },
+            {
+                "question": "Quel est l’avantage de la diffraction des rayons X pour les matériaux cristallins ?",
+                "options": [
+                    "Elle mesure la porosité",
+                    "Elle révèle l’orientation des plans cristallins",
+                    "Elle identifie les défauts macroscopiques",
+                    "Elle donne la couleur exacte du matériau"
+                ],
+                "answer": "Elle révèle l’orientation des plans cristallins"
+            },
+            {
+                "question": "Quel paramètre n’est PAS mesuré lors d’un essai de traction ?",
+                "options": [
+                    "Limite d’élasticité",
+                    "Allongement à la rupture",
+                    "Résistance maximale",
+                    "Conductivité électrique"
+                ],
+                "answer": "Conductivité électrique"
+            },
+            {
+                "question": "Dans un essai DSC, une transition endothermique correspond à :",
+                "options": [
+                    "Une perte de masse",
+                    "Un dégagement de chaleur",
+                    "Une absorption de chaleur",
+                    "Une modification de couleur"
+                ],
+                "answer": "Une absorption de chaleur"
+            },
+            {
+                "question": "Quelle méthode est adaptée pour visualiser les phases dans un alliage métallique ?",
+                "options": [
+                    "DSC",
+                    "Spectroscopie UV",
+                    "Microscopie optique ou électronique",
+                    "Thermogravimétrie"
+                ],
+                "answer": "Microscopie optique ou électronique"
+            },
+          {
+                "question": "Quel type de sollicitation est appliqué lors d’un essai de flexion 3 points ?",
+                "options": [
+                    "Une traction",
+                    "Une compression",
+                    "Un cisaillement",
+                    "Une flexion"
+                ],
+                "answer": "Une flexion"
+            },
+            {
+                "question": "Quel est le principal intérêt de la spectroscopie UV-Visible ?",
+                "options": [
+                    "Observer des cristaux",
+                    "Mesurer la résistance mécanique",
+                    "Identifier des liaisons électroniques",
+                    "Analyser la rugosité"
+                ],
+                "answer": "Identifier des liaisons électroniques"
+            },
+            {
+                "question": "Quel essai permet de mesurer la ténacité d’un matériau ?",
+                "options": [
+                    "Essai de fatigue",
+                    "Essai de dureté",
+                    "Essai de flexion",
+                    "Essai de résilience"
+                ],
+                "answer": "Essai de résilience"
+            },
+            {
+                "question": "Quel phénomène est analysé par thermogravimétrie ?",
+                "options": [
+                    "La masse molaire",
+                    "La variation de masse en fonction de la température",
+                    "La conductivité thermique",
+                    "La dilatation thermique"
+                ],
+                "answer": "La variation de masse en fonction de la température"
+            },
+            {
+                "question": "Dans un essai de traction, le point de rupture est :",
+                "options": [
+                    "Le début de la zone élastique",
+                    "La fin de la zone plastique",
+                    "Le maximum de contrainte",
+                    "Le moment où l’éprouvette casse"
+                ],
+                "answer": "Le moment où l’éprouvette casse"
+            },
+            {
+                "question": "Qu’est-ce qu’un polymère amorphe ?",
+                "options": [
+                    "Un polymère bien organisé en cristaux",
+                    "Un polymère contenant du métal",
+                    "Un polymère sans structure cristalline",
+                    "Un polymère conducteur"
+                ],
+                "answer": "Un polymère sans structure cristalline"
+            },
+            {
+                "question": "La température de fusion d’un polymère est observable sur une courbe :",
+                "options": [
+                    "DSC",
+                    "UV-Visible",
+                    "Spectrométrique IR",
+                    "Raman"
+                ],
+                "answer": "DSC"
+            },
+            {
+                "question": "La diffraction des rayons X est particulièrement utile pour :",
+                "options": [
+                    "Les polymères amorphes",
+                    "Les liquides",
+                    "Les matériaux cristallins",
+                    "Les gaz rares"
+                ],
+                "answer": "Les matériaux cristallins"
+            },
+            {
+                "question": "Quelle grandeur peut être déduite d’un essai de fluage ?",
+                "options": [
+                    "La dureté",
+                    "La résistance au choc",
+                    "La déformation dans le temps sous contrainte constante",
+                    "La température de transition vitreuse"
+                ],
+                "answer": "La déformation dans le temps sous contrainte constante"
+            },
+            {
+                "question": "Lors d’un essai de DSC, une transition exothermique indique :",
+                "options": [
+                    "Une absorption de chaleur",
+                    "Une perte de masse",
+                    "Un dégagement de chaleur",
+                    "Un changement de couleur"
+                ],
+                "answer": "Un dégagement de chaleur"
+            },
+            {
+                "question": "Quelle technique permet d’observer l’état de surface à l’échelle nanométrique ?",
+                "options": [
+                    "Microscopie optique",
+                    "Microscopie électronique à balayage (MEB)",
+                    "Spectroscopie infrarouge",
+                    "Spectroscopie UV"
+                ],
+                "answer": "Microscopie électronique à balayage (MEB)"
+            },
+            {
+                "question": "Quel paramètre est mesuré directement lors d’un test de dureté Brinell ?",
+                "options": [
+                    "La profondeur d’empreinte",
+                    "La résistance à la rupture",
+                    "Le diamètre de l’empreinte laissée par une bille",
+                    "La température de fusion"
+                ],
+                "answer": "Le diamètre de l’empreinte laissée par une bille"
+            },
+            {
+                "question": "L’essai de résilience mesure :",
+                "options": [
+                    "L’élasticité",
+                    "L’absorption d’énergie lors d’un choc",
+                    "La température de transition vitreuse",
+                    "La rugosité de surface"
+                ],
+                "answer": "L’absorption d’énergie lors d’un choc"
+            },
+            {
+                "question": "Quel microscope est nécessaire pour observer la morphologie d’un polymère à très haute résolution ?",
+                "options": [
+                    "Microscope optique",
+                    "Microscope à fluorescence",
+                    "Microscope électronique à transmission",
+                    "Loupe binoculaire"
+                ],
+                "answer": "Microscope électronique à transmission"
+            },
+            {
+                "question": "Quel essai permet de déterminer la température de dégradation thermique d’un matériau ?",
+                "options": [
+                    "Essai de traction",
+                    "Essai DSC",
+                    "Essai de dureté",
+                    "Essai thermogravimétrique"
+                ],
+                "answer": "Essai thermogravimétrique"
+            }
+        ]
+    }
+}
