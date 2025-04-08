@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz interactif</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+      position: relative;
+    }
+
+    .add-button {
+      position: absolute;
+      top: 20px;
+      right: 140px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .view-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .counter {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .question-box {
+      width: 33.33vw;
+      height: calc(33.33vw * 0.71);
+      background-color: #ffffff;
+      color: rgb(27, 27, 27);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      padding: 20px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #efefef;
+    }
+
+    .form-container {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .form-container input {
+      padding: 10px;
+      font-size: 1rem;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .validate-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #ffffff;
+      font-size: 1rem;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+
+    .validate-btn.hidden {
+      display: none;
+    }
+
+    .question-list {
+      margin-top: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .question-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .question-item span {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .delete-btn {
+      background-color: red;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #retryBtn {
+      display: none;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: orange;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Media query for smartphones */
+    @media (max-width: 600px) {
+      .question-box {
+        width: 90%;
+        height: calc(90vw * 0.72); /* 72% de la largeur */
+        font-size: 1.5rem;
+      }
+
+      .view-button {
+        position: static;
+        margin-bottom: 20px;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+
+      .form-container input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="add-button" id="openFormBtn" hidden>➕ Ajouter</button>
+  <button class="view-button" id="viewListBtn">👁 Voir les questions</button>
+  <button onclick="recommencer()" hidden>Recommencer</button>
+  <div class="counter" id="counterDisplay">1 / 1</div>
+
+  <div class="question-box" id="toggleBox">
+    <div id="mainText">question 1</div>
+    <button class="validate-btn hidden" id="validateBtn">✅</button>
+  </div>
+
+  <div class="controls" id="navControls">
+    <button id="prevBtn">⬅️</button>
+    <button id="nextBtn">➡️</button>
+  </div>
+
+  <div class="form-container" id="formContainer">
+    <input type="text" id="questionInput" placeholder="Nouvelle question">
+    <input type="text" id="answerInput" placeholder="Réponse associée">
+    <div class="form-buttons">
+      <button id="addAndContinue">➕ Ajouter une autre</button>
+      <button id="addAndFinish">✅ Terminer</button>
+    </div>
+  </div>
+
+  <div class="question-list" id="questionList"></div>
+
+  <script>
+    let questions = JSON.parse(localStorage.getItem('quizQuestions')) || [
+      { "Exemple de question ?": "Exemple de réponse", acquis: 0 }
+    ];
+
+    let currentIndex = 0;
+    let showingQuestion = true;
+
+    const box = document.getElementById('toggleBox');
+    const mainText = document.getElementById('mainText');
+    const validateBtn = document.getElementById('validateBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const openFormBtn = document.getElementById('openFormBtn');
+    const formContainer = document.getElementById('formContainer');
+    const questionInput = document.getElementById('questionInput');
+    const answerInput = document.getElementById('answerInput');
+    const addAndContinue = document.getElementById('addAndContinue');
+    const addAndFinish = document.getElementById('addAndFinish');
+    const navControls = document.getElementById('navControls');
+    const counterDisplay = document.getElementById('counterDisplay');
+    const viewListBtn = document.getElementById('viewListBtn');
+    const questionList = document.getElementById('questionList');
+    const retryBtn = document.getElementById('retryBtn');
+
+    function saveToLocalStorage() {
+      localStorage.setItem('quizQuestions', JSON.stringify(questions));
+    }
+
+    function updateDisplay() {
+      if (questions.length === 0) {
+        mainText.textContent = "Aucune question";
+        counterDisplay.textContent = "0 / 0";
+        validateBtn.classList.add('hidden');
+        retryBtn.style.display = 'none';
+        return;
+      }
+
+      const currentPair = questions[currentIndex];
+      const question = Object.keys(currentPair)[0];
+      const answer = currentPair[question];
+
+      counterDisplay.textContent = `${currentIndex + 1} / ${questions.length}`;
+
+      if (showingQuestion) {
+        mainText.textContent = question;
+        validateBtn.classList.add('hidden');
+      } else {
+        mainText.textContent = answer;
+        validateBtn.classList.remove('hidden');
+      }
+
+      retryBtn.style.display = (currentIndex === questions.length - 1) ? 'block' : 'none';
+    }
+
+    function renderList() {
+      questionList.innerHTML = '';
+      questions.forEach((q, index) => {
+        const question = Object.keys(q)[0];
+        const answer = q[question];
+        const row = document.createElement('div');
+        row.className = 'question-item';
+
+        row.innerHTML = `
+          <span>${question}</span>
+          <span>${answer}</span>
+          <span><button class="delete-btn" data-index="${index}">🗑️</button></span>
+        `;
+
+        questionList.appendChild(row);
+      });
+
+      const inputRow = document.createElement('div2');
+      inputRow.className = 'question-item';
+      inputRow.innerHTML = `
+        <input type="text" id="newQ" placeholder="Nouvelle question"><br>
+        <input type="text" id="newA" placeholder="Nouvelle réponse"><br><br>
+     
+      `;
+      questionList.appendChild(inputRow);
+      const input2Row = document.createElement('div3');
+      input2Row.className = 'question-item';
+      input2Row.innerHTML = `
+        
+        <button id="quickAdd">✅</button>
+      `;
+      questionList.appendChild(input2Row);
+    }
+
+    questionList.addEventListener('click', (e) => {
+      if (e.target.classList.contains('delete-btn')) {
+        const index = e.target.getAttribute('data-index');
+        questions.splice(index, 1);
+        saveToLocalStorage();
+        renderList();
+        updateDisplay();
+      }
+
+      if (e.target.id === 'quickAdd') {
+        const newQ = document.getElementById('newQ').value.trim();
+        const newA = document.getElementById('newA').value.trim();
+        if (newQ && newA) {
+          questions.push({ [newQ]: newA, acquis: 0 });
+          saveToLocalStorage();
+          renderList();
+          updateDisplay();
+        }
+      }
+    });
+
+    function recommencer() {
+      for (let i = 0; i < questions.length; i++) {
+        questions[i].acquis = 0;
+      }
+      console.log("Questions après reset :", questions);
+    }
+
+    box.addEventListener('click', () => {
+      if (questions.length === 0) return;
+      showingQuestion = !showingQuestion;
+      updateDisplay();
+    });
+
+    validateBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const questionKey = Object.keys(questions[currentIndex])[0];
+      questions[currentIndex] = { [questionKey]: questions[currentIndex][questionKey], acquis: 1 };
+      saveToLocalStorage();
+      updateDisplay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showingQuestion = true;
+        updateDisplay();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        showingQuestion = true;
+        updateDisplay();
+      }
+    });
+
+    openFormBtn.addEventListener('click', () => {
+      formContainer.style.display = 'flex';
+      box.style.display = 'none';
+      navControls.style.display = 'none';
+      counterDisplay.style.display = 'none';
+      questionList.style.display = 'none';
+    });
+
+    viewListBtn.addEventListener('click', () => {
+      questionList.style.display = questionList.style.display === 'none' ? 'flex' : 'none';
+      renderList();
+    });
+
+    retryBtn.addEventListener('click', () => {
+      questions = questions.filter(q => q.acquis === 0);
+      currentIndex = 0;
+      showingQuestion = true;
+      saveToLocalStorage();
+      updateDisplay();
+    });
+
+    function addQuestionToArray() {
+      const q = questionInput.value.trim();
+      const a = answerInput.value.trim();
+      if (q && a) {
+        questions.push({ [q]: a, acquis: 0 });
+        saveToLocalStorage();
+      }
+    }
+
+    addAndContinue.addEventListener('click', () => {
+      addQuestionToArray();
+      questionInput.value = '';
+      answerInput.value = '';
+      questionInput.focus();
+    });
+
+    addAndFinish.addEventListener('click', () => {
+      addQuestionToArray();
+      formContainer.style.display = 'none';
+      box.style.display = 'flex';
+      navControls.style.display = 'flex';
+      counterDisplay.style.display = 'block';
+      currentIndex = questions.length - 1;
+      showingQuestion = true;
+      updateDisplay();
+    });
+
+    updateDisplay();
+  </script>
+</body>
+</html>
