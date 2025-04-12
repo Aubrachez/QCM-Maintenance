@@ -1,0 +1,14 @@
+{
+    "QCM": {
+        "Questions": [
+            {
+                "question": "Quand les premières théories sur le SPC ont-elles été développées ?",
+                "options": ["1920", "1931", "1950", "1980"],
+                "answer": "1931"
+            },
+            {
+                "question": "Quelle industrie a massivement adopté le SPC dans les années 1980 ?",
+                "options": ["L’industrie textile", "L’industrie automobile américaine", "L’industrie aéronautique", "L’industrie électronique"],
+                "answer": "L’industrie automobile américaine"
+            }
+        ]}}
